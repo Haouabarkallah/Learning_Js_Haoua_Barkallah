@@ -7,43 +7,64 @@
 body {
     background-color: hsl(0, 0%, 8%) ;
     color: hsl(0, 0%, 100%);
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
 }
 #profile-card {
-    width: 300px;
-    margin: 50px auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
+    background-color: #1f1f1f;
+    padding: 2.5rem;
+    border-radius: 12px;
     text-align: center;
-    background-color: hsl(0, 0%, 12%);
+    width: 100%;
+    max-width: 350px;
 }
 #avatar {
-    width: 150px;
-    height: 150px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
-    margin: 20px auto;
-    display: block;
+    margin-bottom: 1rem;
 }
+    
 #name {
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 10px;
 }
 #location {
-    font-size: 16px;
-    color: #777;
-    margin-bottom: 20px;
+    color: #c5f82a;
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin-top: -0.5rem;
 }
 #bio {
-    font-size: 14px;
-    color: #555;
-    margin-bottom: 20px;
+    font-size: 0.85rem;
+    color: #cccccc;
+    margin: 1.5rem 0;
 }
 #links {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
-#footer {
-
+#links a {
+    display: block;
+    background-color: #333333;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+}
+#links a:hover {
+    background-color: #c5f82a;
+    color: #141414;
+    cursor: pointer;
 }
