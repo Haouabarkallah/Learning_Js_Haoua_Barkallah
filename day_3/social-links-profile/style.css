@@ -6,6 +6,17 @@
 
 body {
 
+
+
+}
+#profile-card {
+    width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #f9f9f9;
 }
 #avatar {
     width: 150px;
@@ -13,4 +24,27 @@ body {
     border-radius: 50%;
     margin: 20px auto;
     display: block;
+}
+#name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+#location {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 20px;
+}
+#bio {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
+}
+#links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+#footer {
+
 }
