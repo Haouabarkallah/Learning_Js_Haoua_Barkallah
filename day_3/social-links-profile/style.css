@@ -5,9 +5,8 @@
 }
 
 body {
-
-
-
+    background-color: hsl(0, 0%, 8%) ;
+    color: hsl(0, 0%, 100%);
 }
 #profile-card {
     width: 300px;
@@ -16,7 +15,7 @@ body {
     border: 1px solid #ccc;
     border-radius: 10px;
     text-align: center;
-    background-color: #f9f9f9;
+    background-color: hsl(0, 0%, 12%);
 }
 #avatar {
     width: 150px;
