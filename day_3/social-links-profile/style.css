@@ -1,5 +1,16 @@
 * {
     margin: 0;
     padding: 0;
-    border-box: border-box;
+   
+}
+
+body {
+
+}
+#avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 20px auto;
+    display: block;
 }
