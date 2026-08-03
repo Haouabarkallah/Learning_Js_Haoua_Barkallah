@@ -30,18 +30,18 @@ body {
 }
     
 .name {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
     margin-bottom: 10px;
 }
 .location {
     color: white;
     font-weight: bold;
-    font-size: 0.9rem;
-    margin-top: -0.5rem;
+    font-size: 0.8rem;
+    margin-top: -0.3rem;
 }
 .bio {
-    font-size: 0.85rem;
+    font-size: 0.75rem;
     color: #cccccc;
     margin: 1.5rem 0;
 }
