@@ -44,4 +44,9 @@ h3 {
 
 
 }
-
+.nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
