@@ -1,44 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Frontend Mentor | E-commerce product page</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 0.6875rem; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="brand" href="#">
+        <img src="./images/logo.svg" alt="Sneakers logo" />
+      </a>
 
-  Collections
-  Men
-  Women
-  About
-  Contact
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="#">Collections</a>
+        <a href="#">Men</a>
+        <a href="#">Women</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </nav>
 
-  Sneaker Company
+      <div class="header-actions">
+        <button class="icon-button" type="button" aria-label="Open cart">
+          <img src="./images/icon-cart.svg" alt="Cart icon" />
+        </button>
+        <button class="avatar-button" type="button" aria-label="Open profile">
+          <img src="./images/image-avatar.png" alt="User avatar" />
+        </button>
+      </div>
+    </header>
 
-  Fall Limited Edition Sneakers
+    <main class="product-page">
+      <section class="product-gallery" aria-labelledby="product-gallery-heading">
+        <h2 id="product-gallery-heading" class="visually-hidden">Product gallery</h2>
 
-  These low-profile sneakers are your perfect casual wear companion. Featuring a 
-  durable rubber outer sole, they’ll withstand everything the weather can offer.
+        <div class="gallery-card gallery-main">
+          <img src="./images/image-product-1.jpg" alt="Fall limited edition sneakers" />
+        </div>
 
-  $125.00
-  50%
-  $250.00
+        <div class="thumbnail-grid" role="group" aria-label="Product image thumbnails">
+          <button class="thumbnail selected" type="button" aria-label="Show image 1">
+            <img src="./images/image-product-1-thumbnail.jpg" alt="Thumbnail of white and tan sneaker" />
+          </button>
+          <button class="thumbnail" type="button" aria-label="Show image 2">
+            <img src="./images/image-product-2-thumbnail.jpg" alt="Thumbnail of white sneaker" />
+          </button>
+          <button class="thumbnail" type="button" aria-label="Show image 3">
+            <img src="./images/image-product-3-thumbnail.jpg" alt="Thumbnail of white sneaker on rock" />
+          </button>
+          <button class="thumbnail" type="button" aria-label="Show image 4">
+            <img src="./images/image-product-4-thumbnail.jpg" alt="Thumbnail of sneakers on orange background" />
+          </button>
+        </div>
+      </section>
 
-  0
-  Add to cart
-  
+      <section class="product-details">
+        <p class="eyebrow">Sneaker Company</p>
+        <h1>Fall Limited Edition Sneakers</h1>
+        <p class="product-copy">
+          These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer.
+        </p>
+
+        <div class="price-panel">
+          <div class="current-price">$125.00</div>
+          <div class="discount-pill">50%</div>
+        </div>
+        <div class="original-price">$250.00</div>
+
+        <div class="purchase-panel">
+          <div class="quantity-control" aria-label="Product quantity">
+            <button type="button" class="quantity-button" aria-label="Decrease quantity">-</button>
+            <span class="quantity-value">0</span>
+            <button type="button" class="quantity-button" aria-label="Increase quantity">+</button>
+          </div>
+
+          <button type="button" class="add-to-cart-button">
+            <img src="./images/icon-cart.svg" alt="Cart icon" aria-hidden="true" />
+            Add to cart
+          </button>
+        </div>
+      </section>
+    </main>
+  </div>
+
   <footer class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. Coded by <a href="#">Your Name Here</a>.
   </footer>
 </body>
 </html>
