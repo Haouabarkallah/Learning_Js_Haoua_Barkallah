@@ -30,3 +30,18 @@ h3 {
     font-size: 20;
     margin-bottom: 10px;
 }
+
+.header a img {
+    width: 10px;
+    height: 10px;
+    margin-bottom: 20px;
+    
+}
+
+.header {
+    text-align: center;
+    text-decoration: none;
+
+
+}
+
