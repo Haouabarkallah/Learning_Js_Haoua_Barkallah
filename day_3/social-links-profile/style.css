@@ -70,16 +70,14 @@ body {
     cursor: pointer;
 }
 
-#footer  {
-    font-size: 0.75rem;
-    text-align: center;
-    margin-top: 40rem;
-     
-    
+#footer {
+  margin: 40px auto 0;
+  max-width: 1110px;
+  text-align: center;
+  color: white;
+  font-size: 0.875rem;
 }
 
 #footer a {
-    color: #c5f82a;
-    text-decoration: none;
-    
+  color: inherit;
 }
