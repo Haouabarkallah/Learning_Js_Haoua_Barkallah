@@ -22,10 +22,10 @@ console.log(typeof (x))
 // }
 function evenNumbers(num){
     console.log(typeof (num), isNaN(num))
-    if (num % 2 === 0) {
-        console.log("even number");
+    if (isNaN(num)) {
+        console.log(`${num} is not a valid number`);
     } 
-     else{
+     else(){
             console.log("odd number");
         }
     
