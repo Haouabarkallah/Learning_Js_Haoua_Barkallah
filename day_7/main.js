@@ -8,10 +8,20 @@
 //     }
 //     return evenArr;
 // }
-let x = prompt("Enter a number: ");
+let x = parseInt(prompt("Enter a number: "));
 console.log(typeof (x))
 
+// function evenNumbers(num){
+//     if (num % 2 === 0) {
+//         console.log("even number");
+//     } 
+//      else{
+//             console.log("odd number");
+//         }
+    
+// }
 function evenNumbers(num){
+    console.log(typeof (num), isNaN(num))
     if (num % 2 === 0) {
         console.log("even number");
     } 
