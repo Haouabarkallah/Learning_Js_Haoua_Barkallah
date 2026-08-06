@@ -21,8 +21,8 @@ function evenNumbers(num){
     
 }
 
-evenNumbers(2)// "even number"
-evenNumbers(3); // "odd number"
+evenNumbers(5) // "even number"
+ // "odd number"
 
 // fonction for odd numbers
 // function oddNumbers(arr) {
