@@ -9,7 +9,18 @@
 //     return evenArr;
 // }
 
-evenNumbers([1, 2, 3, 4, 5, 6]); // [2, 4, 6]
+function evenNumbers(num){
+    if (num % 2 === 0) {
+        console.log("even number");
+    } 
+     else{
+            console.log("odd number");
+        }
+    
+}
+
+evenNumbers(2); // "even number"
+evenNumbers(3); // "odd number"
 
 // fonction for odd numbers
 // function oddNumbers(arr) {
