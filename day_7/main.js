@@ -8,6 +8,8 @@
 //     }
 //     return evenArr;
 // }
+let x = prompt("Enter a number: ");
+console.log(typeof (x))
 
 function evenNumbers(num){
     if (num % 2 === 0) {
@@ -19,7 +21,7 @@ function evenNumbers(num){
     
 }
 
-evenNumbers(2); // "even number"
+evenNumbers(2)// "even number"
 evenNumbers(3); // "odd number"
 
 // fonction for odd numbers
