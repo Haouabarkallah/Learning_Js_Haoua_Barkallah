@@ -9,27 +9,6 @@ body {
     color: black;
    
 }
-p {
-   
-    color: black;
-    font-size: 15px;
-
-}
-h1 {
-    color: black;
-    font-size: 30px;
-   
-}
- h2 {
-    color: black;
-    font-size: 25px;
-    
-}
-h3 {
-    color: black;
-    font-size: 20;
-    
-}
 
 .header a img {
     width: 50px;
@@ -86,6 +65,10 @@ h3 {
 .hero {
     background-color: rgb(55, 45, 207);
     padding: 50px;
-    text-align: center;
-    color: white;
+    text-align: left;
+    color: black;
+}
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
 }
