@@ -96,6 +96,11 @@ body {
     margin-bottom: 40px;
     
 }
+.hero a:hover {
+    background-color: gray;
+    color: black;
+    text-decoration: none;
+}
 
 .hero-img {
     /* background-color: aqua; */
@@ -187,11 +192,21 @@ body {
     cursor: pointer;
 }
 .inscription form button:hover {
-    background-color: rgb(102, 102, 211);
+    background-color: gray;
     color: black;
 
 }
 .inscription form label {
     font-size: 20px;
     color: black;
+}
+/* .inscription form input:focus {
+    outline: none;
+    border-color: rgb(60, 60, 240);
+    box-shadow: 0 0 5px rgb(60, 60, 240);
+} */
+ .inscription form input:hover {
+    outline: none;
+    border-color: gray;
+    
 }
