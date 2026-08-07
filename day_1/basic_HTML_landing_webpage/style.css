@@ -5,7 +5,7 @@
 }
 body {
     background-color: white;
-    font-family: "Arial", sans-serif;
+    font-family: 'Inter', sans-serif;
     color: black;
     margin: 0%  5% 0% 5% ;
    
@@ -50,7 +50,7 @@ body {
 
 }
 .nav a:hover {
-    color: blue;
+    color: rgb(60, 60, 240);
     text-decoration: underline 5px solid;
     cursor: pointer;
     
@@ -63,43 +63,52 @@ body {
    
 }
 .hero {
-    background-color: rgb(55, 45, 207);
-    padding: 50px;
+    /* background-color: rgb(55, 45, 207); */
+   
     text-align: left;
     color: black;
     margin-top: 5%;
     height: 50%;
     width: 50%;
+
     
     
 }
 .hero h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
+    
+    font-size: 40px;
+    margin-bottom: 40px;
+    font-weight: bold;
+
 }
 .hero p {
-    font-size: 18px;
-    margin-bottom: 30px;
+    
+    font-size: 20px;
+    margin-bottom: 40px;
 }
 .hero a {
-    display: inline-block;
+
     padding: 10px 20px;
-    background-color: blue;
+    background-color: rgb(60, 60, 240);
     color: white;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    
 }
 
 .hero-img {
-    background-color: aqua;
-    height: 250%;
-    width: 100%;
+    /* background-color: aqua; */
+    
+    margin-top: 5%;
+    height: 50%;
+    width: 50%;
    
-    position: static;
 }
 .hero-img img {
     width: 100%;
     height: 20%;
+    border: solid rgb(60, 60, 240);
     border-radius: 10px;
     
 }
@@ -110,4 +119,79 @@ body {
     align-items: center;
    
     
+}
+.features {
+    text-align: none;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5%;
+    
+}
+.features h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    
+}
+.features ol {
+    list-style: none;
+    padding: 0;
+    /* font-weight: bold; */
+    /* display: flex; */
+    /* gap: 20px; */
+}
+
+.features ol li h3{
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.features ol li p {
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: none;
+}
+.inscription {
+    text-align: none;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.inscription h2 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.inscription form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+    margin: 0 auto;
+}
+.inscription form input {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1.5px solid rgb(60, 60, 240);
+}
+.inscription form button {
+    padding: 10px;
+    font-size: 20px;
+    background-color: rgb(60, 60, 240);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.inscription form button:hover {
+    background-color: rgb(102, 102, 211);
+    color: black;
+
+}
+.inscription form label {
+    font-size: 20px;
+    color: black;
 }
