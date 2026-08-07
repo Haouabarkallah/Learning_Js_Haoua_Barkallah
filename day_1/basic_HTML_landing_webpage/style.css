@@ -68,6 +68,7 @@ body {
     margin-top: 5%;
     height: 50%;
     width: 50%;
+    position: relative;
 }
 .hero h1 {
     font-size: 36px;
@@ -91,6 +92,7 @@ body {
     height: 50%;
     width: 50%;
     margin-top: 5%;
+    position: static;
 }
 .hero-img img {
     width: 100%;
