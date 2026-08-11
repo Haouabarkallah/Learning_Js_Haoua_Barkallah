@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* :root {
+    --
+} */
 
 body {
     font-family: url("https://fonts.google.com/specimen/Red+Hat+Display");
@@ -25,4 +28,9 @@ body {
     border: black solid 2px;
     border-radius: 12px;
     align-items: center;
+}
+.container img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-bottom: 40px;
 }
