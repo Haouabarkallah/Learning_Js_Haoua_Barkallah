@@ -3,9 +3,14 @@
     padding: 0;
     box-sizing: border-box;
 }
-/* :root {
-    --
-} */
+:root {
+    --blue-50: hsl(225, 100%, 98%);
+    --gray-600: hsl(224, 23%, 55%);
+    --blue-950: hsl(223, 47%, 23%);
+    --blue-100: hsl(225, 100%, 94%);
+    --blue-700: hsl(245, 75%, 52%);
+    --hover-blue:hsl(245, 83%, 68%);
+}
 
 body {
    
@@ -100,5 +105,5 @@ p {
 }
 
 .cancel-order:hover{
-    
+
 }
