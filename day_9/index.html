@@ -1,11 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Summary Component</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+
+  <main class="card-container">
+    <div class="card">
+      <!-- Image d'en-tête -->
+      <div class="card-hero">
+        <img src="illustration-hero.svg" alt="Illustration de musique">
+      </div>
+
+      <!-- Contenu principal -->
+      <div class="card-body">
+        <h1 class="title">Order Summary</h1>
+        <p class="description">
+          You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!
+        </p>
+
+        <!-- Plan d'abonnement -->
+        <div class="plan-box">
+          <div class="plan-details">
+            <div class="music-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48">
+                <g fill="none" fill-rule="evenodd">
+                  <circle cx="24" cy="24" r="24" fill="#E0E8FF"/>
+                  <path fill="#7280A7" fill-rule="nonzero" d="M13.5 27.5a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0zm11-13v13a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0zM24.5 14.5l10-3v13a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0z"/>
+                </g>
+              </svg>
+            </div>
+            <div class="plan-text">
+              <h2>Annual Plan</h2>
+              <p>$59.99/year</p>
+            </div>
+          </div>
+          <a href="#" class="change-btn">Change</a>
+        </div>
+
+        <!-- Actions -->
+        <button class="btn-primary">Proceed to Payment</button>
+        <button class="btn-secondary">Cancel Order</button>
+      </div>
+    </div>
+  </main>
+
 </body>
 </html>
