@@ -26,7 +26,7 @@ body {
 
 .container{
 
-    /* display: flex; */
+    display: block;
     
     background-color: white;
     padding: 2.5rem;
@@ -67,5 +67,12 @@ p {
 .plan img {
     width: 50px;
     height: 50px;
+
+}
+.payment {
+    list-style: none;
+    
+}
+.cancel-order {
 
 }
