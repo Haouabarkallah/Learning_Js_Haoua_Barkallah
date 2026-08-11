@@ -3,3 +3,167 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+:root {
+  /* Couleurs principales */
+  --pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --hover-blue: hsl(245, 83%, 68%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 16px;
+  background-color: #e0e8ff;
+  background-image: url('pattern-background-desktop.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+}
+
+/* Carte principale */
+.card {
+  background-color: #ffffff;
+  max-width: 450px;
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0px 20px 40px rgba(56, 78, 183, 0.15);
+  text-align: center;
+}
+
+.card-hero img {
+  width: 100%;
+  display: block;
+}
+
+.card-body {
+  padding: 2.5rem 2rem;
+}
+
+.title {
+  color: var(--dark-blue);
+  font-weight: 900;
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.description {
+  color: var(--desaturated-blue);
+  font-weight: 500;
+  line-height: 1.6;
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Bloc d'abonnement */
+.plan-box {
+  background-color: var(--very-pale-blue);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+}
+
+.plan-details {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.plan-text {
+  text-align: left;
+}
+
+.plan-text h2 {
+  color: var(--dark-blue);
+  font-size: 1rem;
+  font-weight: 900;
+}
+
+.plan-text p {
+  color: var(--desaturated-blue);
+  font-size: 0.9rem;
+  margin-top: 0.2rem;
+}
+
+.change-btn {
+  color: var(--bright-blue);
+  font-weight: 700;
+  font-size: 0.85rem;
+  transition: all 0.2s ease;
+}
+
+.change-btn:hover {
+  color: var(--hover-blue);
+  text-decoration: none;
+}
+
+/* Boutons d'action */
+.btn-primary {
+  width: 100%;
+  background-color: var(--bright-blue);
+  color: #ffffff;
+  border: none;
+  padding: 1rem;
+  border-radius: 12px;
+  font-weight: 900;
+  font-size: 0.95rem;
+  cursor: pointer;
+  box-shadow: 0px 20px 20px rgba(56, 78, 183, 0.2);
+  transition: background-color 0.2s ease;
+  margin-bottom: 1rem;
+}
+
+.btn-primary:hover {
+  background-color: var(--hover-blue);
+}
+
+.btn-secondary {
+  background: none;
+  border: none;
+  color: var(--desaturated-blue);
+  font-weight: 900;
+  font-size: 0.9rem;
+  cursor: pointer;
+  width: 100%;
+  transition: color 0.2s ease;
+}
+
+.btn-secondary:hover {
+  color: var(--dark-blue);
+}
+
+/* Adaptation Mobile */
+@media (max-width: 480px) {
+  body {
+    background-image: url('pattern-background-mobile.svg');
+  }
+
+  .card-body {
+    padding: 2rem 1.5rem;
+  }
+
+  .title {
+    font-size: 1.4rem;
+  }
+
+  .description {
+    font-size: 0.875rem;
+  }
+}
