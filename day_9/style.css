@@ -14,11 +14,6 @@
   --hover-blue: hsl(245, 83%, 68%);
 }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
 
 body {
   font-family: 'Red Hat Display', sans-serif;
