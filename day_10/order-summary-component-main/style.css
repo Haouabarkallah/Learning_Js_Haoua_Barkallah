@@ -113,22 +113,32 @@ p {
     color: var(--hover-blue);
     text-decoration: none;
 }
-.button {
+/* .button {
     list-style: none;
     padding: 0;
     display: flex;
     flex-direction: column;
     gap: 12px;
-}
+} */
 .payment a {
+     width: 100%;
      display: block;
-     background-color: aqua;
-     color: black;
+     background-color: var(--blue-700);
+     color: white;
+     border: none;
      text-decoration: none;
-     padding: 12px;
-     border-radius: 10px;
-     font-weight: 600;
+     padding: 16px;
+     border-radius: 12px;
+     font-weight: 900;
+     font-size: 1rem;
+     cursor: pointer;
+     box-shadow: 0px 20px 20px var(--blue-700);
+     transition: background-color 0.2s ease;
+     margin-bottom: 1rem;
      
+}
+.payment a:hover {
+    background-color: var(--hover-blue);
 }
 .cancel-order a {
 
