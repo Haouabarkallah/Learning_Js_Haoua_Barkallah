@@ -141,17 +141,23 @@ p {
     background-color: var(--hover-blue);
 }
 .cancel-order a {
-
-    display: block;
+    background: none;
+    border: none;
+    
      /* background-color: aqua; */
-     color: black;
-     text-decoration:none;
-     padding: 12px;
-     border-radius: 10px;
-     font-weight: 600;
+    color: var(--gray-600);
+    text-decoration:none;
+    padding: 12px;
+    border-radius: 10px;
+    font-weight: 900;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 100%;
+    transition: color 0.2s ease;
      
 }
 
-.cancel-order:hover{
-
+.cancel-order a:hover {
+    color: var(--blue-950);
 }
+
