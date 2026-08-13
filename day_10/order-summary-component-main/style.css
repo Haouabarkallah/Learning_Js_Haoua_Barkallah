@@ -71,12 +71,14 @@ p {
 }
 
 .plan {
-    padding: 1%;
-    background-color: #f4f4f4;
+    padding: 1.25rem;
+    background-color: var(--blue-100);
     width: fit-content;
     display: flex;
-    gap: 1rem;
-    margin-bottom: 10px;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 12px;
+    margin-bottom: 2rem;
 }
 .plan img {
     width: 50px;
