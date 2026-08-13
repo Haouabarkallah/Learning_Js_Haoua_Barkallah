@@ -14,9 +14,9 @@
 
 body {
    
-    font-family: url("https://fonts.google.com/specimen/Red+Hat+Display");
-    background-color: #f4f4f4;
-    background-image:url("images/pattern-background-desktop (1).svg");
+    font-family: 'Red Hat Display', sans-serif;
+    background-color: var(--blue-100);
+    background-image:url('./images/pattern-background-desktop (1).svg');
     /* background-position: top;
     background-size: cover;
     background-position: 1 3; */
