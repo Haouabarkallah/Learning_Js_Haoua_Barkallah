@@ -55,9 +55,11 @@ body {
     /* height: 100px; */
 }
 h1 {
+    color: var(--blue-950);
     font-weight:900 ;
-    font-size: 32px;
-    margin-bottom: 10px;
+    font-size: 2rem;
+    margin-bottom: 16px;
+    padding: 2.5rem 2rem;
 }
 p {
     margin-bottom: 10px; 
