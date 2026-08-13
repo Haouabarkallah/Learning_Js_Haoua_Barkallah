@@ -47,10 +47,11 @@ body {
 
 }
 .container img {
-    border-top-left-radius: 10px;
+    /* border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    margin-bottom: 40px;
-    width: 450px;
+    margin-bottom: 40px; */
+    width: 100%;
+    display: block;
     /* height: 100px; */
 }
 h1 {
