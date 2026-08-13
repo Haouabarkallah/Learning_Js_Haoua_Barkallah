@@ -103,6 +103,16 @@ p {
     height: 50px;
 
 }
+.plan a {
+    color: var(--blue-700);
+    font-weight: 700;
+    font-size: 16px;
+    transition: all 0.2s ease;
+}
+.plan a:hover {
+    color: var(--hover-blue);
+    text-decoration: none;
+}
 .button {
     list-style: none;
     padding: 0;
