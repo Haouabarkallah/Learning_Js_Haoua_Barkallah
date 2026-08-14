@@ -76,7 +76,7 @@ p {
 }
 
 .plan {
-    padding: 1.25rem;
+    padding: 1rem;
     background-color:  var(--blue-50);
   
     /* width: 450px; */
@@ -99,7 +99,7 @@ p {
 
 .plan-txt {
     text-align: left;
-    margin: 0;
+    /* margin: 0; */
 }
 .plan-txt h2 {
 
@@ -112,6 +112,8 @@ p {
     font-size: 1rem;
     margin-top: 2px;
     margin-left: 0;
+    margin-bottom: 0;
+    margin-right: 0;
 }
 .plan img {
     width: 50px;
