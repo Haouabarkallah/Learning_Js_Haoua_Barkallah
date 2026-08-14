@@ -126,8 +126,8 @@ p {
 }
 
 .payment {
-    width: 100%;
-    display: block;
+    width: 400px;
+    display:block;
     background-color: var(--blue-700);
     color: white;
     border: none;
@@ -140,7 +140,7 @@ p {
     box-shadow: 0px 20px 20px rgba(56, 78, 183, 0.2);
     transition: background-color 0.2s ease;
     margin-bottom: 1rem;
-    margin-right: 2rem;
+    margin-right: 1rem;
     margin-left: 2rem;
     /* margin:0 3rem 2rem 3rem; */
      
@@ -166,3 +166,21 @@ p {
     color: var(--blue-950);
 }
 
+
+@media (max-width: 480px) {
+  body {
+    background-image: url('pattern-background-mobile.svg');
+  }
+
+  /* .card-body {
+    padding: 2rem 1.5rem;
+  } */
+
+  .plan-txt h2 {
+    font-size: 1.4rem;
+  }
+
+  .plan-txt p {
+    font-size: 0.875rem;
+  }
+}
