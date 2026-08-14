@@ -143,7 +143,7 @@ p {
     font-weight: 900;
     font-size: 1rem;
     cursor: pointer;
-    box-shadow: 0px 20px 20px rgba(56, 78, 183, 0.2);
+    box-shadow: 0px 20px 20px hsl(246, 54%, 85%);
     transition: background-color 0.2s ease;
     margin-bottom: 1rem;
     margin-right: 1rem;
