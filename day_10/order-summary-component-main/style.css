@@ -73,7 +73,7 @@ p {
 .plan {
     padding: 1.25rem;
     background-color: var(--blue-100);
-    width: fit-content;
+    width: 450px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -94,7 +94,7 @@ p {
 }
 .total {
     text-align: left;
-    color: var(--blue-100);
+    color: var(--gray-600);
     font-size: 1rem;
     margin-top: 2px;
 }
