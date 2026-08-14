@@ -96,6 +96,7 @@ p {
 
 .plan-txt {
     text-align: left;
+    margin: 0;
 }
 .plan-txt h2 {
 
@@ -103,7 +104,7 @@ p {
     font-size: 16px;
     font-weight: 900;
 }
-.plan-txt p{
+.plan-txt p {
     color: var(--gray-600);
     font-size: 1rem;
     margin-top: 2px;
@@ -123,34 +124,29 @@ p {
     color: var(--hover-blue);
     text-decoration: none;
 }
-/* .button {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-} */
-.payment a {
-     width: 100%;
-     display: block;
-     background-color: var(--blue-700);
-     color: white;
-     border: none;
-     text-decoration: none;
-     padding: 16px;
-     border-radius: 12px;
-     font-weight: 900;
-     font-size: 1rem;
-     cursor: pointer;
-     box-shadow: 0px 20px 20px var(--blue-700);
-     transition: background-color 0.2s ease;
-     margin-bottom: 1rem;
+
+.payment {
+    width: 100%;
+    display: block;
+    background-color: var(--blue-700);
+    color: white;
+    border: none;
+    text-decoration: none;
+    padding: 16px;
+    border-radius: 12px;
+    font-weight: 900;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0px 20px 20px var(--blue-700);
+    transition: background-color 0.2s ease;
+    /* margin-bottom: 1rem; */
+    margin:0 2rem 2rem 2rem;
      
 }
-.payment a:hover {
+.payment:hover {
     background-color: var(--hover-blue);
 }
-.cancel-order a {
+.cancel-order  {
     background: none;
     border: none;
     
@@ -164,10 +160,11 @@ p {
     cursor: pointer;
     width: 100%;
     transition: color 0.2s ease;
+    margin:0 2rem 2rem 2rem;
      
 }
 
-.cancel-order a:hover {
+.cancel-order:hover {
     color: var(--blue-950);
 }
 
