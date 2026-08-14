@@ -129,7 +129,7 @@ p {
 }
 
 .payment {
-    width: 400px;
+    width: 385px;
     display:block;
     background-color: var(--blue-700);
     color: white;
