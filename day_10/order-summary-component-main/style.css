@@ -178,7 +178,7 @@ p {
 
 @media (max-width: 480px) {
   body {
-    background-image: url('pattern-background-mobile.svg');
+    background-image: url('./images/pattern-background-mobile(1).svg');
   }
 
   /* .card-body {
@@ -193,3 +193,57 @@ p {
     font-size: 0.875rem;
   }
 }
+@media (max-width: 375px) {
+  body {
+    background-image: url('./images/pattern-background-mobile\ \(1\).svg');
+  }
+
+  /* .card-body {
+    padding: 2rem 1.5rem;
+  } */
+
+  .plan-txt h2 {
+    font-size: 0.2rem;
+  }
+
+  .plan-txt p {
+    font-size: 0.7rem;
+  }
+  .payment {
+    width: 50px;
+    display:block;
+    background-color: var(--blue-700);
+    color: white;
+    border: none;
+    text-decoration: none;
+    padding: 1px;
+    border-radius: 12px;
+    font-weight: 500;
+    font-size: 0.1rem;
+    cursor: pointer;
+    box-shadow: 0px 20px 20px hsl(246, 54%, 85%);
+    transition: background-color 0.2s ease;
+    margin-bottom: 2.5rem;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+    /* margin:0 3rem 2rem 3rem; */
+     
+}
+  .cancel-order  {
+    background: none;
+    border: none;
+     /* background-color: aqua; */
+    color: var(--gray-600);
+    font-weight: 900;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 50px;
+    transition: color 0.2s ease;
+    margin-bottom: 4rem;
+    margin-right: 1rem;
+    margin-left: 2rem;
+    /* margin:0 2rem 2rem 2rem; */
+     
+}
+}
+
