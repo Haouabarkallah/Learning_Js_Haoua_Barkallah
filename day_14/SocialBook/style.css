@@ -7,3 +7,14 @@ body {
     font-family: 'poppins', sans-serif;
     background-color: lightgrey;
 }
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #1876f2;
+    padding: 5px 5%;
+}
+/* .logo {
+    width: 160px;
+    margin: right 45px;
+} */
