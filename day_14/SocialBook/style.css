@@ -18,3 +18,15 @@ nav{
     width: 160px;
     margin: right 45px;
 }
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+.nav-left ul li {
+    list-style: none;
+    display: inline-block;
+}
+.nav-left ul li img {
+    width: 28px;
+    margin: 0 15px;
+}
