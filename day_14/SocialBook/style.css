@@ -111,3 +111,11 @@ nav{
     width: 25px;
     margin-right: 15px;
 }
+
+.importantes-links a:last-child{
+    color:#1876f2
+}
+.importantes-links{
+    border-bottom: 1px solid #ccc;
+
+}
