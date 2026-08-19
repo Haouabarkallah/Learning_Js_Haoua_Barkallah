@@ -125,3 +125,8 @@ nav{
     margin-right: 15px;
 
 }
+.shortcut-links p{
+    margin:25px 0;
+    color: #626262 ;
+    font-weight: 500;
+}
