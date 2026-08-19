@@ -86,6 +86,7 @@ nav{
     position: sticky;
     top: 70px;
     align-self: flex-start;
+    
    
 }
 .right-sidebar {
@@ -94,6 +95,11 @@ nav{
     position: sticky;
     top: 70px;
     align-self: flex-start;
+    background: #fff;
+    padding: 20px;
+    border-radius: 4px;
+    color:#626262;
+
     
 }
 .main-content{
@@ -142,6 +148,6 @@ nav{
 }
 .sidebar-title a{
     text-decoration: none;
-    color:#1876f2
+    color:#1876f2;
     font-size: 12px;
 }
