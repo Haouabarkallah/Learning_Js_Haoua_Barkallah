@@ -99,3 +99,11 @@ nav{
 .main-content{
     flex-basis: 47%;
 }
+.importantes-links a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    color: #626262;
+    width: fit-content;
+}
