@@ -71,3 +71,8 @@ nav{
     top: 0;
     right: 0;
 }
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 5%;
+}
