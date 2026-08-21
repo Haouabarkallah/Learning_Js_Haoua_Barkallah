@@ -229,7 +229,7 @@ nav{
     border-radius: 50%;
     top: 10px;
     left: 10px;
-    border-radius: 5px solid #626262;
+    border: 5px solid #626262;
 } 
 .story p{
     position: absolute;
