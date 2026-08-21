@@ -232,3 +232,11 @@ nav{
     left: 10px;
     border-radius: 5px solid #626262;
 }
+.story p{
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+}
