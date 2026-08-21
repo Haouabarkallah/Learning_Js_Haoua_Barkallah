@@ -217,21 +217,21 @@ nav{
 }
 .story{
     flex-basis: 18%;
-    padding-top: 32px;
+    padding-top: 32%;
     position: relative;
-    background-image: url(./images/status-1.png);
+    background-image: linear-gradient(transparent,rgba(0,0,0,0.5)),url(./images/status-1.png);
     background-position: center;
     background-size: cover;
     border-radius: 10px;
 }
-.story img{
+.story img {
     position: absolute;
     width: 45px;
     border-radius: 50%;
     top: 10px;
     left: 10px;
     border-radius: 5px solid #626262;
-}
+} 
 .story p{
     position: absolute;
     bottom: 10px;
@@ -239,4 +239,4 @@ nav{
     text-align: center;
     color: #fff;
     font-size: 14px;
-}
+} 
