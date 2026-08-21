@@ -214,5 +214,13 @@ nav{
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
-    
+}
+.story{
+    flex-basis: 18%;
+    padding-top: 32px;
+    position: relative;
+    background-image: url(./images/status-1.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
 }
