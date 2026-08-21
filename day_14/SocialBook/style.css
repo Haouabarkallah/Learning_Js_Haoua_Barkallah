@@ -210,3 +210,9 @@ nav{
     top: unset;
     bottom: 5px;
 }
+.story-gallery{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    
+}
