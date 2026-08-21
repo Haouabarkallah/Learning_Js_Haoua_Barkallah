@@ -272,7 +272,7 @@ nav{
     background: #fff;
     border-radius: 6px;
     padding: 20px;
-    columns: #626262;;
+    color: #626262;;
 }
 .user-profile{
     display: flex;
@@ -282,5 +282,15 @@ nav{
 }
 .user-profile img {
     width: 45px;
-    border-radius: ;
+    border-radius:50%;
+    margin-right:10px ;
+}
+.user-profile p {
+    margin-bottom: -5px;
+    font-weight: 500;
+    columns: #626262;
+}
+.user-profile small{
+    font-size: 12px;
+    
 }
