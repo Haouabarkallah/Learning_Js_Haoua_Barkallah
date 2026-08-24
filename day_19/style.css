@@ -4,3 +4,11 @@
     box-sizing: border-box;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+.container{
+    width: 500px;
+    height: 250px;
+    background-color: #000;
+    border: 3px solid #000;
+    text-align: center;
+    margin: 150px auto;
+}
