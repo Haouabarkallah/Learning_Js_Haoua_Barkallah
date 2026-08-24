@@ -17,4 +17,13 @@ const result = () => {
     else if (inputNum < randonNum && inputNum > 1){
         outputText.innerHTML = "Your Guess is Low";
     }
+    else if (inputNum <1){
+        outputText.innerHTML = "higher, It has to be between 1 and 100!";
+    }
+    else if(isNaN(inputNum)){
+        outputText.innerHTML = "IT is not a number";
+    }
+    else{
+        outputText.innerHTML ="Lower, It has to be between 1 and 100!";
+    }
 }
