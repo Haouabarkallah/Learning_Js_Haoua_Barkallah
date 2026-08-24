@@ -18,6 +18,7 @@
 }
 .container .output{
     color: gray ;
+    margin-top: 20px;
 }
 .container input{
     width: 150px; 
