@@ -37,9 +37,10 @@
 }
 .container .button button{
     cursor: pointer;
-    padding: 10px 20px;
+    padding: 10px 15px;
     background-color: wheat;
     border: 2px solid gray;
     color: #000;
     font-size: 15px;
+    border-radius: 10%;
 }
