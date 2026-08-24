@@ -5,10 +5,10 @@ let outputText = document.getElementById('output');
 let randonNum = Math.ceil(Math.random()* 100);
 
 const result = () => {
-    let inputNum =document.getElementById('inputNumber').value;
+    let inputNum = document.getElementById('inputNumber').value;
    
     if(inputNum==randonNum){
-        outputText.innerHTML ="It is True" + "The Number is" + randonNum;
+        outputText.innerHTML ="It is True" + "The Number is " + randonNum;
 
     }
     else if (inputNum > randonNum && inputNum < 100){
@@ -21,7 +21,7 @@ const result = () => {
         outputText.innerHTML = "higher, It has to be between 1 and 100!";
     }
     else if(isNaN(inputNum)){
-        outputText.innerHTML = "IT is not a number";
+        outputText.innerHTML = "IT is not a number!";
     }
     else{
         outputText.innerHTML ="Lower, It has to be between 1 and 100!";
@@ -31,6 +31,5 @@ const result = () => {
 enterButton.addEventListener('click', result);
 againButton.addEventListener('click', function(){
 location.reload()
-}
-    
-)
+}   
+);
