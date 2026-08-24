@@ -27,3 +27,5 @@ const result = () => {
         outputText.innerHTML ="Lower, It has to be between 1 and 100!";
     }
 }
+
+enterButton.addEventListener('click', result)
