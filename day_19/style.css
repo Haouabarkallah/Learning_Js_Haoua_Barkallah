@@ -15,6 +15,7 @@
 }
 .container h1{
     color: #fff;
+    margin-top: 20px;
 }
 .container .output{
     color: gray ;
