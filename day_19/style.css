@@ -30,3 +30,9 @@
     margin-top: 20px;
 
 }
+.container .button button{
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: wheat;
+    border: 2px solid gray;
+}
