@@ -29,6 +29,8 @@ const result = () => {
 }
 
 enterButton.addEventListener('click', result);
-againButton.addEventListener('click', function()[
-    location.reload()
-]);
+againButton.addEventListener('click', function(){
+location.reload()
+}
+    
+)
