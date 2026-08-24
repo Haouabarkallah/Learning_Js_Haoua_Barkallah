@@ -5,8 +5,8 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .container{
-    width: 500px;
-    height: 250px;
+    width: 600px;
+    height: 300px;
     background-color: #000;
     border: 3px solid #000;
     text-align: center;
@@ -21,8 +21,8 @@
     margin-top: 20px;
 }
 .container input{
-    width: 150px; 
-    height: 20px;
+    width: 250px; 
+    height: 25px;
     outline: none;
     margin-top: 30px;
 }
