@@ -18,3 +18,8 @@
 .container .output{
     color: gray ;
 }
+.container input{
+    width: 150px; 
+    height: 20px;
+    outline: none;
+}
