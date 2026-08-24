@@ -31,7 +31,9 @@
 }
 .container .button{
     margin-top: 20px;
-
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
 }
 .container .button button{
     cursor: pointer;
