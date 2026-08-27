@@ -22,3 +22,9 @@ function updateForm(){
             break;               
     }
 }
+
+function calculateArea(){
+   //get the selected shape 
+   let shape = document.getElementById("id_shapes").value;
+    
+}
