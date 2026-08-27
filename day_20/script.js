@@ -27,4 +27,13 @@ function calculateArea(){
    //get the selected shape 
    let shape = document.getElementById("id_shapes").value;
     
+   // calculate the shape's area
+   let area = 0;
+   switch (shape) {
+    case "circle":
+        let radius = document.getElementById("id_radius").value;
+        area = Math.PI * radius*radius;
+        break;
+    
+   }
 }
