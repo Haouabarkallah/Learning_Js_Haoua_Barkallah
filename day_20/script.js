@@ -43,6 +43,10 @@ function calculateArea(){
         let side = document.getElementById("id_side").value;
         area = side*side;
         break;  
-
+     case "rectangle":
+        let length = document.getElementById("id_length").value;
+        let width= document.getElementById("id_width").value;
+        area = length*width;
+        break;  
    }
 }
