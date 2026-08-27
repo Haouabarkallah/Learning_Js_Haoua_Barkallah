@@ -9,7 +9,7 @@
 <body>
     <div class="container">
         <h1>Calculate the area of various shapes!</h1>
-        <form action="javascript:calculateArea()"onchange="javascript:updateForm()">
+        <form action="javascript:calculateArea()" onchange="javascript:updateForm()">
 
             <label for="id_shapes">Select a shape</label>
             <select  id="id_shapes">
@@ -18,6 +18,11 @@
                 <option value="square" selected>Square</option>
                 <option value="rectangle">Rectangle</option>
             </select>
+            <div id="id_inputs_circle">
+                <label for="id_radius"> Radius</label>
+                <input id="id_radius" type="number" min="0" step="any">
+                <h2><em>A =&pi;r <sup>2</sup></em></h2>
+            </div>
         </form>
     </div>
     <script src="script.js"></script>
