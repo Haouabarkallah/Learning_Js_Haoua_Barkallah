@@ -16,6 +16,9 @@ function updateForm(){
             break; 
         case "square":
             document.getElementById("id_inputs_square").hidden =false;
-            break;        
+            break;   
+        case "rectangle":
+            document.getElementById("id_inputs_rectangle").hidden =false;
+            break;               
     }
 }
