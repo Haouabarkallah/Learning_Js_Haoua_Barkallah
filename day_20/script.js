@@ -14,6 +14,8 @@ function updateForm(){
         case "triangle":
             document.getElementById("id_inputs_triangle").hidden =false;
             break; 
-               
+        case "square":
+            document.getElementById("id_inputs_square").hidden =false;
+            break;        
     }
 }
