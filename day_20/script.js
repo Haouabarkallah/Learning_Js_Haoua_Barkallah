@@ -11,5 +11,9 @@ function updateForm(){
         case "circle":
             document.getElementById("id_inputs_circle").hidden =false;
             break;
+        case "triangle":
+            document.getElementById("id_inputs_triangle").hidden =false;
+            break; 
+               
     }
 }
