@@ -49,4 +49,6 @@ function calculateArea(){
         area = length*width;
         break;  
    }
+   // output the area
+   document.getElementById("id_output").innerHTML = "Area = " + area;
 }
