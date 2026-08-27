@@ -34,6 +34,11 @@ function calculateArea(){
         let radius = document.getElementById("id_radius").value;
         area = Math.PI * radius*radius;
         break;
+    case "triangle":
+        let base = document.getElementById("id_base").value;
+        let height = document.getElementById("id_height").value;
+        area = base * height / 2;
+        break;    
     
    }
 }
