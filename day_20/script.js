@@ -39,6 +39,10 @@ function calculateArea(){
         let height = document.getElementById("id_height").value;
         area = base * height / 2;
         break;    
-    
+    case "square":
+        let side = document.getElementById("id_side").value;
+        area = side*side;
+        break;  
+
    }
 }
