@@ -6,5 +6,10 @@ function updateForm(){
     document.getElementById("id_inputs_rectangle").hidden =true;
     
     //get the selected shape and show its inputs
-    let shape = ocument
+    let shape = document.getElementById("id_shapes").value;
+    switch(shape) {
+        case "circle":
+            document.getElementById("id_inputs_circle").hidden =false;
+            break;
+    }
 }
