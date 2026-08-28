@@ -6,6 +6,9 @@
 }
 
 .container{
+    width: 450px;
+    height: auto;
+    position: center;
     /* display: flexbox ;
     justify-content: space-between; */
     background-color: rgb(166, 166, 231);
