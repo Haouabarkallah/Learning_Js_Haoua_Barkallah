@@ -71,13 +71,17 @@ body{
 
     text-align: center;
     width: auto;
-    height: 30px;
+    height: auto;
     cursor: pointer;
     padding: 10px;
     background-color: white;
     /* border: 2px solid black; */
     color: #000;
-    font-size: 15px;
+    font-size: 20px;
     font-weight: 500;
+    margin-bottom: 20px;
     
+}
+.container h2{
+    color: rgb(88, 5, 5);
 }
