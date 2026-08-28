@@ -9,7 +9,7 @@ const result = () => {
     let inputNum = document.getElementById('inputNumber').value;
    
     if(inputNum==randomNum){
-        outputText.innerHTML ="It is True" + "The Number is " + randomNum;
+        outputText.innerHTML ="It is True " + "The Number is " + randomNum;
 
     }
     else if (inputNum > randomNum && inputNum < 100){
