@@ -60,3 +60,9 @@ body{
     margin-top: 20px;
     /* margin-bottom: 20px; */
 }
+.container form select:hover{
+    color: black;
+    background-color: white;
+    cursor: pointer;
+
+}
