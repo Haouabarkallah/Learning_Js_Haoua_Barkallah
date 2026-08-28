@@ -3,12 +3,16 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+   
 }
 
+body{
+     background-color:  rgb(173, 173, 234);
+}
 .container{
     width: 600px;
     height: 300px;
-    background-color: rgb(166, 166, 231);
+    background-color: rgb(149, 149, 234);
     margin: 150px auto;
     text-align: center;
     padding: 20px;
