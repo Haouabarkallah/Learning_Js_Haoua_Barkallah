@@ -4,3 +4,15 @@
     box-sizing: border-box;
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(166, 166, 231);
+    align-items: center;
+    /* text-align: center; */
+    padding: 20px;
+    /* justify-items: center; */
+
+
+}
