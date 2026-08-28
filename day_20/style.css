@@ -8,14 +8,11 @@
 .container{
     width: 600px;
     height: 300px;
-    position: center;
-    /* display: flexbox ;
-    justify-content: space-between; */
     background-color: rgb(166, 166, 231);
-    align-items: center;
-    /* text-align: center; */
+    margin: 150px auto;
+    text-align: center;
     padding: 20px;
-    /* justify-items: center; */
+    border: 2px solid white;
 
 }
 .container h1{
