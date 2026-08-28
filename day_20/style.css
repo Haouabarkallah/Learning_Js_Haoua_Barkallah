@@ -32,5 +32,24 @@ body{
     margin-top: 10px;
     text-align: center;
     font-size: 20px;
+    align-items: center;
+    
+ 
+}
+.container form label{
+    margin-bottom: 10px;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: 400;
 
+    
+}
+.container form input{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /* width: 250px; */
+    height: 25px;
+    outline: none;
+    border-radius: 0;
+    border: none;
 }
