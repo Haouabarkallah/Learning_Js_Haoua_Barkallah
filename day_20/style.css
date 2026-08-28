@@ -67,3 +67,17 @@ body{
     cursor: pointer;
 
 }
+.container .button {
+
+    text-align: center;
+    width: auto;
+    height: 30px;
+    cursor: pointer;
+    padding: 10px;
+    background-color: white;
+    /* border: 2px solid black; */
+    color: #000;
+    font-size: 15px;
+    font-weight: 500;
+    
+}
