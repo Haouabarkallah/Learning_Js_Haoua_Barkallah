@@ -58,6 +58,7 @@ body{
     height: 30px;
     outline: none;
     margin-top: 20px;
+    font-size: 15px;
     /* margin-bottom: 20px; */
 }
 .container form select:hover{
