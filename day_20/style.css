@@ -6,8 +6,8 @@
 }
 
 .container{
-    width: 450px;
-    height: auto;
+    width: 600px;
+    height: 300px;
     position: center;
     /* display: flexbox ;
     justify-content: space-between; */
