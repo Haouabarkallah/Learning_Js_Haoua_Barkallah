@@ -11,7 +11,7 @@ body{
 }
 .container{
     width: 600px;
-    height: 300px;
+    height: auto;
     background-color: rgb(149, 149, 234);
     margin: 150px auto;
     text-align: center;
