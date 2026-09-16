@@ -6,3 +6,6 @@ let string =`HAlla Hayati`// string
 let isBig =true //boolean
 let isSmall =false //boolean
 let c // undefined
+let isNull = null // null
+let notes =[1, 13,0, "pas de notes", [3,8,"les bonus"]] // array
+let student = {firstname:"Ali", age: 20, isStudent:true, maths:13} // object
