@@ -1,6 +1,6 @@
 // Mini project 5 : testeur de types
 function analyser(valeur){
-    console.log(`Taleur :${JSON.stringify(valeur)}`);
+    console.log(`Valeur :${JSON.stringify(valeur)}`);
     console.log(`Type : ${typeof valeur}`);
     console.log(`Truthy ? ${Boolean(valeur)}`);
 
