@@ -1,4 +1,4 @@
-//Mini-projet 4 : « Calculatrice en console »
+//Mini-projet 6 : « Calculatrice en console »
 function calculatrice(a, operateur, b) {
     switch (operateur) {
         case "+":
