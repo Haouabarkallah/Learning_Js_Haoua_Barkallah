@@ -5,3 +5,4 @@ function analyser(valeur){
     console.log(`Truthy ? ${Boolean(valeur)}`);
 
 }
+[42,"TEXTE", "", 0, null, undefined, [], {}, NaN, true].forEach(analyser);
