@@ -9,6 +9,10 @@ function calculatrice(a,b, operateur) {
             return a * b;
         case "/": 
             return  b !== 0 ? a / b : "Erreur : Division par zéro";
+        default:
+            return " Opérateur inconnu. Veuillez utiliser +, -, * ou /.";
 
     }
 }
+console.log(calculatrice(10, 5, "+")); // Affiche 15
+console.log(calculatrice(10, 0, "/")); // Affiche "Erreur : Division par zéro"
