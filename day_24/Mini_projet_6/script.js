@@ -14,5 +14,7 @@ function calculatrice(a, operateur, b) {
 
     }
 }
-console.log(calculatrice(10, "+", 5)); // Affiche 15
-console.log(calculatrice(10, "/", 0)); // Affiche "Erreur : Division par zéro"
+
+// console.log(calculatrice(10, "+", 5)); // Affiche 15
+// console.log(calculatrice(10, "/", 0)); // Affiche "Erreur : Division par zéro"
+console.log("veuillez entre les valeurs a, operateur et b pour effectuer le calcul");
