@@ -9,5 +9,8 @@ for (const tentative of tentatives) {
         break; // Sort de la boucle si le nombre est trouvé 
     }else if (tentative < nombreSecret) {
         console.log(`Le nombre secret est plus grand que ${tentative}.`); // Le nombre secret est plus grand que la tentative
+    }else {
+        console.log(`Le nombre secret est plus petit que ${tentative}.`); // Le nombre secret est plus petit que la tentative
     }
+
 }
