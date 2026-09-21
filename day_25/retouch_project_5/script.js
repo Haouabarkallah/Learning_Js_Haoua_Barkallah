@@ -5,4 +5,5 @@ function analyser(valeur){
     console.log(`Truthy ? ${Boolean(valeur)}`);
 
 }
-[42,"TEXTE", "", 0, null, undefined, [], {}, NaN, true].forEach(analyser);
+[ prompt("Entrez une valeur :")].forEach(analyser); // demande à l'utilisateur d'entrer une valeur et l'analyse
+// [42,"TEXTE", "", 0, null, undefined, [], {}, NaN, true].forEach(analyser);
