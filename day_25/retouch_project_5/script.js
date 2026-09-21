@@ -1,4 +1,4 @@
-// Mini project 5 : testeur de types
+// retouching Mini project 5 : testeur de types
 function analyser(valeur){
     console.log(`Valeur :${JSON.stringify(valeur)}`);
     console.log(`Type : ${typeof valeur}`);
