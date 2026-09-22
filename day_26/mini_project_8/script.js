@@ -7,9 +7,9 @@ for (let i=lettreDeviner; i !== lettre; i--) { // Boucle jusqu'à ce que l'utili
    if (lettreDeviner === lettre) {
         console.log(`Super, vous avez trouvé la lettre secrète ! ${lettre}` );// Si l'utilisateur devine la lettre
    } else if (lettreDeviner < lettre) {
-        console.log("La lettre secrète est plus grande que " + lettreDeviner + "."); // Si la lettre devinée est inférieure à la lettre secrète
+        console.log(`La lettre secrète est plus grande que ${lettreDeviner}.`); // Si la lettre devinée est inférieure à la lettre secrète
    } else {
-        console.log("La lettre secrète est plus petite que " + lettreDeviner + "."); // Si la lettre devinée est supérieure à la lettre secrète
+        console.log(`La lettre secrète est plus petite que ${lettreDeviner}.`); // Si la lettre devinée est supérieure à la lettre secrète
         break; // Sort de la boucle si l'utilisateur devine la lettre
     }
     
