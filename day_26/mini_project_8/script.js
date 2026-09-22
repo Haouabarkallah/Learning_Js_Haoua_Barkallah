@@ -2,7 +2,17 @@
 
 const lettre= 'H'; // La lettre secrète à deviner
 let lettreDeviner; // La lettre que l'utilisateur va deviner
-for (let i=lettreDeviner; i !== lettre; i--) { // Boucle jusqu'à ce que l'utilisateur devine la lettre) {
+for (let i=lettreDeviner; i !== lettre; i--) { // Boucle jusqu'à ce que l'utilisateur devine la lettre) 
    let lettreDeviner = prompt("Devinez la lettre secrète (entre A et Z) :"); // Demande à l'utilisateur de deviner la lettre
+   if (lettreDeviner === lettre) {
+        console.log(" Super, vous avez trouvé la lettre secrète !");// Si l'utilisateur devine la lettre
+   } else if (lettreDeviner < lettre) {
+        console.log("La lettre secrète est plus grande que " + lettreDeviner + "."); // Si la lettre devinée est inférieure à la lettre secrète
+   } else {
+        console.log("La lettre secrète est plus petite que " + lettreDeviner + "."); // Si la lettre devinée est supérieure à la lettre secrète
+   }
+    
+
+    
 }
 // console.log(`Le nombre secret était ${nombreSecret}.`); // Affiche le nombre secret à la fin du jeu
