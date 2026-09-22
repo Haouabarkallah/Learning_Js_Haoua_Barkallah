@@ -10,7 +10,8 @@ for (let i=lettreDeviner; i !== lettre; i--) { // Boucle jusqu'à ce que l'utili
         console.log("La lettre secrète est plus grande que " + lettreDeviner + "."); // Si la lettre devinée est inférieure à la lettre secrète
    } else {
         console.log("La lettre secrète est plus petite que " + lettreDeviner + "."); // Si la lettre devinée est supérieure à la lettre secrète
-   }
+        break; // Sort de la boucle si l'utilisateur devine la lettre
+    }
     
 
     
