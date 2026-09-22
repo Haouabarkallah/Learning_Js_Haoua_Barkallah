@@ -1,8 +1,9 @@
 // Mini-projet 8 : « Devine le nombre »
 
 const nombreSecret = Math.floor(Math.random() * 100) + 1; // Génère un nombre aléatoire entre 1 et 100
-const tentatives =[45,70,60,65,63]; // Exemple de tentatives pour tester le code
-
+// const tentatives =[45,70,60,65,63]; // Exemple de tentatives pour tester le code
+let tentatives = [tentative = prompt('Entrez un nombre :')]; // Tableau pour stocker les tentatives de l'utilisateur
+; // Nombre de tentatives autorisées
 for (const tentative of tentatives) {
     if (tentative === nombreSecret) {
         console.log(`Trouvé ! Le nombre secret était ${nombreSecret}.`); // L'utilisateur a trouvé le nombre secret
@@ -14,3 +15,4 @@ for (const tentative of tentatives) {
     }
 
 }
+// console.log(`Le nombre secret était ${nombreSecret}.`); // Affiche le nombre secret à la fin du jeu
