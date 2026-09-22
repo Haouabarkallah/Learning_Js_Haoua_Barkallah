@@ -1,6 +1,7 @@
 // Mini-projet 8 : « Devine la lettre »
 
-
+const lettre= 'a'; // La lettre secrète à deviner
+let lettreDeviner; // La lettre que l'utilisateur va deviner
 for (const tentative of tentatives) {
     if (tentative === nombreSecret) {
         console.log(`Trouvé ! Le nombre secret était ${nombreSecret}.`); // L'utilisateur a trouvé le nombre secret
