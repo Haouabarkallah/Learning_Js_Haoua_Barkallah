@@ -68,3 +68,13 @@ nav .navbar-top{
     width: 150px;
     height: 75px;
 }
+#menuButton{
+    width: 45px;
+    height: 40px;
+    cursor: pointer;
+    color: #49989e;
+    background: transparent;
+    border: none;
+    display: none;
+    font-size: 1.5rem;
+}
