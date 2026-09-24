@@ -123,3 +123,15 @@ nav .navbar-top{
 #sum-prices {
     padding-left: 5px;
 }
+
+.sum-prices h6 {
+    font-size: 0.9rem;
+}
+
+.cart-logo {
+    cursor: pointer;
+}
+
+.cart-logo:hover, .account:hover * {
+    color: #0e5e53;
+}
