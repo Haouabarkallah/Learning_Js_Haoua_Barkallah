@@ -488,3 +488,16 @@ main {
     font-size: 1.3rem;
     padding: 50px;
 }
+.products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+.product {
+    position: relative;
+    text-align: center;
+    height: 400px;
+    border-radius: 5px;
+    overflow: hidden;
+}
