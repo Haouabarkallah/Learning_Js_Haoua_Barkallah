@@ -679,5 +679,18 @@ footer .footer-second {
     width: calc(33.33333%);
     float: left;
 }
+.footer-last {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+}
 
+.footer-last li {
+    margin: 0 5px;
+}
+
+.hidden {
+    display: none;
+}
 
