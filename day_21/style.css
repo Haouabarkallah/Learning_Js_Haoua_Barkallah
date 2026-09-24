@@ -588,3 +588,37 @@ main {
     font-size: 1.4rem;
     color: #7e6c1f;
 }
+/* Buttons style */
+.btn {
+    background-color: #96c8cc;
+    padding: 15px 50px 15px 30px;
+    color: #141414;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1.1rem;
+    position: relative;
+}
+
+.btn:active {
+    box-shadow: none;
+}
+
+.btn > .fa-angle-right {
+    font-size: 1.5rem;
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: right 0.5s;
+}
+
+.btn:hover .fa-angle-right {
+    font-size: 1.5rem;
+    position: absolute;
+    right: 20px;
+}
+
+.btn i {
+    margin: 0 5px;
+}
