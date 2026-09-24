@@ -589,7 +589,7 @@ main {
     color: #7e6c1f;
 }
 /* Buttons style */
-.btn {
+.btn-small  {
     background-color: #96c8cc;
     padding: 15px 50px 15px 30px;
     color: #141414;
@@ -600,11 +600,11 @@ main {
     position: relative;
 }
 
-.btn:active {
+.btn-small :active {
     box-shadow: none;
 }
 
-.btn > .fa-angle-right {
+.btn-small  > .fa-angle-right {
     font-size: 1.5rem;
     position: absolute;
     right: 30px;
@@ -613,12 +613,12 @@ main {
     transition: right 0.5s;
 }
 
-.btn:hover .fa-angle-right {
+.btn-small:hover .fa-angle-right {
     font-size: 1.5rem;
     position: absolute;
     right: 20px;
 }
 
-.btn i {
+.btn-small i {
     margin: 0 5px;
 }
