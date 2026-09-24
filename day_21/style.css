@@ -431,27 +431,25 @@ ul .nav-links {
     padding: 20px 10px;
 }
 
-#hearderSlide .MS-controls .MS-left {
+#hearderSlide .ms-controls .ms-left {
     border: none;
     left: 10px;
 }
-#hearderSlide .MS-controls .MS-right {
+#hearderSlide .ms-controls .ms-right {
     border: none;
     right: 10px;
 }
 
-.MS-right:focus,
-.MS-left:focus {
+.ms-right:focus,.ms-left:focus {
     outline: none;
 }
 
-.MS-right:active,
-.MS-left:active {
+.ms-right:active,.ms-left:active {
     color: #fff;
     background-color: #49989e;
 }
 
-#hearderSlide .MS-right {
+#hearderSlide .ms-right {
     position: absolute;
     font-weight: bolder;
     right: 20px;
@@ -459,7 +457,7 @@ ul .nav-links {
     transform: translateY(-50%);
 }
 
-#hearderSlide .MS-left {
+#hearderSlide .ms-left {
     font-weight: bolder;
     position: absolute;
     left: 20px;
