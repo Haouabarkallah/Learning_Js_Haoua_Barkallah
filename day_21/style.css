@@ -84,3 +84,12 @@ nav .navbar-top{
 #menuButton:hover {
     color: #0d3c3f;
 }
+/* container of my account and shopping cart */
+.navbar-top > div {
+    margin-right: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+}
