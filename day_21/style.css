@@ -478,3 +478,13 @@ main {
     text-align: center;
     margin: 50px 0;
 }
+.product-container {
+    max-width: 1600px;
+    margin: auto;
+    width: 88vw;
+    position: relative;
+}
+.main-section h3 {
+    font-size: 1.3rem;
+    padding: 50px;
+}
