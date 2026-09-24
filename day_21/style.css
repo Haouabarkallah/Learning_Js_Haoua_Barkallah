@@ -528,3 +528,21 @@ main {
         opacity: 1;
     }
 }
+.product-image:hover .product-over {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-image {
+    position: relative;
+    height: 62%;
+    background-color: #eee;
+}
+
+.product-image img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+}
