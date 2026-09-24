@@ -273,3 +273,18 @@ nav .navbar-top{
     justify-self: center;
     margin: 150px auto;
 }
+.price {
+    color: #dd3333;
+    margin-top: 10px;
+    text-align: left;
+    padding: 5px;
+    font-size: 1rem;
+}
+
+.navbar {
+    max-width: 1600px;
+    width: 88vw;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
