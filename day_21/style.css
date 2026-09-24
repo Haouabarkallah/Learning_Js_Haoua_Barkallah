@@ -220,3 +220,25 @@ nav .navbar-top{
     transform: translate(-50%, -50%);
     margin: 0 auto;
 }
+.productOnCart > .checkoutButton {
+    font-size: 0.9rem;
+    margin: 20px auto;
+    border: none;
+    background-color: #297075;
+    padding: 10px 20px;
+    color: #eee;
+    cursor: pointer;
+}
+
+.overlay {
+    overflow: hidden;
+    display: inline-block;
+    content: "";
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    background: rgba(0, 0, 0, 0.5);
+}
