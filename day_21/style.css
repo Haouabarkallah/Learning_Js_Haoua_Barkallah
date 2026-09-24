@@ -108,3 +108,18 @@ nav .navbar-top{
 .accountButton:focus {
     outline: none;
 }
+.navbar-top .shopping-cart {
+    margin-left: 10px;
+    font-size: 1.4rem;
+}
+
+.shopping-cart .sum-prices {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#sum-prices {
+    padding-left: 5px;
+}
