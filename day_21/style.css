@@ -376,3 +376,11 @@ ul .nav-links {
     text-align: center;
     font-size: 0.9rem;
 }
+.nav-links:hover .link {
+    color: #24738b;
+    text-decoration: underline;
+}
+
+.navbarResponsive .links {
+    margin: 5px;
+}
