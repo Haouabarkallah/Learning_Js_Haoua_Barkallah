@@ -384,3 +384,21 @@ ul .nav-links {
 .navbarResponsive .links {
     margin: 5px;
 }
+.navbarResponsive ul {
+    flex-direction: column;
+    text-align: left;
+}
+
+.navbarResponsive .search-bar form {
+    position: relative;
+    margin-left: 50px;
+}
+
+.navbarResponsive .nav-links {
+    text-align: left;
+}
+
+.navbarResponsive .nav-links > .link {
+    z-index: 15;
+    color: white;
+}
