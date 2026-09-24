@@ -546,3 +546,16 @@ main {
     transform: translate(-50%, -50%);
     width: 70%;
 }
+
+.product-summary {
+    font-size: 0.9rem;
+    position: relative;
+    padding: 10px 5px;
+    height: 38%;
+}
+
+.product-summary > .price {
+    position: absolute;
+    left: 20px;
+    bottom: 0;
+}
