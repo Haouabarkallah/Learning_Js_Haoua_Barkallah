@@ -353,11 +353,26 @@ nav .navbar-top{
 
 .links {
     position: relative;
-    display: inline-blo;
+    display: inline-block;
     margin: auto;
 }
 
 .links ul {
     display: flex;
     flex-direction: row;
+}
+ul .nav-links {
+    cursor: pointer;
+    color: #333333;
+    text-align: center;
+    padding: 15px;
+}
+
+.nav-links > a:visited, .navbar-top > a:visited {
+    color: #333333;
+}
+
+.link {
+    text-align: center;
+    font-size: 0.9rem;
 }
