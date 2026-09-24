@@ -242,3 +242,22 @@ nav .navbar-top{
     z-index: -1;
     background: rgba(0, 0, 0, 0.5);
 }
+
+.stopScrolling {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.buyItems h6 {
+    margin-bottom: 10px;
+}
+
+.buyItems button {
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 900;
+    font-size: 1.2rem;
+    padding: 0 6px;
+    border: none;
+}
