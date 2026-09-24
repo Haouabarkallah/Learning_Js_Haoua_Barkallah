@@ -261,3 +261,15 @@ nav .navbar-top{
     padding: 0 6px;
     border: none;
 }
+.buyItems button:active {
+    color: #96c8cc;
+}
+
+.buyItems > div {
+    padding: 0 20px;
+}
+
+.productOnCart .empty-cart {
+    justify-self: center;
+    margin: 150px auto;
+}
