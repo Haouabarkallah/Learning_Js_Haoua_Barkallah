@@ -814,3 +814,34 @@ footer .footer-second {
     }
 }
 
+@media screen and (max-width: 500px) {
+    .btn {
+        font-size: 0.9rem;
+    }
+
+    .navbar {
+        width: 100vw;
+        height: 430px;
+    }
+
+    .productOnCart {
+        font-size: 0.8rem;
+    }
+    .products {
+        grid-template-columns: 1fr;
+    }
+
+    .product-summary .price {
+        display: inline;
+        left: 0;
+    }
+
+    .account-text {
+        display: none;
+    }
+
+    .fas {
+        font-size: 1rem;
+    }
+    
+}
