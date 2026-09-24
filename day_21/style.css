@@ -187,3 +187,36 @@ nav .navbar-top{
     padding: 10px 0;
     display: flex;
 }
+.productOnCart img {
+    width: 90px;
+}
+
+.productOnCart .top {
+    display: flex;
+    background-color: #616161;
+    text-align: center;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+.top button {
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    margin-left: 10px;
+    color: #c24c37;
+    cursor: pointer;
+}
+
+.top button:hover {
+    color: #e40505;
+}
+
+.top h3 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+}
