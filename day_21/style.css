@@ -98,13 +98,13 @@ nav .navbar-top{
     font-size: 0.9rem;
     padding: 10px;
 }
-.account-btn {
+.accountButton {
     background: none;
     border: none;
     font-size: 1.4rem;
     cursor: pointer;
 }
 
-.account-btn:focus {
+.accountButton:focus {
     outline: none;
 }
