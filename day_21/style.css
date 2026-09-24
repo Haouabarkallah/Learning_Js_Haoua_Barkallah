@@ -347,3 +347,17 @@ nav .navbar-top{
     font-size: 1rem;
     transition: all 1s;
 }
+#search-icon:active, #search-icon:focus {
+    outline: none;
+}
+
+.links {
+    position: relative;
+    display: inline-blo;
+    margin: auto;
+}
+
+.links ul {
+    display: flex;
+    flex-direction: row;
+}
