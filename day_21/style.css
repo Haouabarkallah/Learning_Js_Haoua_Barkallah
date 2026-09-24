@@ -61,3 +61,10 @@ nav .navbar-top{
    justify-content: space-between; 
 
 }
+.navbar-top .logo{
+    position: absolute;
+    top: 30px;
+    left: 100px;
+    width: 150px;
+    height: 75px;
+}
