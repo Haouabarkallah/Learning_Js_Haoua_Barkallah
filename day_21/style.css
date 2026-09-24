@@ -622,3 +622,19 @@ main {
 .btn i {
     margin: 0 5px;
 }
+.btn-small {
+    border: none;
+    font-size: 0.9rem;
+    width: 60%;
+    padding: 15px;
+    background-color: white;
+    box-shadow: 2px 2px 2px #49989e;
+    color: black;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.btn-small:hover {
+    background-color: #49989e;
+    color: white;
+}
