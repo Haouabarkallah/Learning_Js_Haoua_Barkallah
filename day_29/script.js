@@ -66,26 +66,15 @@ function showAddressBook(){
         addressBook = JSON.parse(localStorage['addbook']);
         addBookDiv.innerHTML='';
         for(var n in addressBook){
-            <div class="entry">
-                <div class="name">
-                    <p> Hala</p>
-                </div>
-                <div class="email">
-                    <p>hala@gmail.com</p>
-                </div>
-                <div class="phone">
-                    <p>699076543</p>
-                </div>
-                <div class="address">
-                    <p>Manguier</p>
-                </div>
-                <div class="city">
-                    <p>Yaoundé</p>
-                </div>
-                <div class="del">
-                    <a href="#"> Delete</a>
-                </div>
-            </div>
+            var str= '<div class="entry">';
+                str +=   ' <div class="name"> <p>' + addressBook[n].fullname + '</p> </div>';
+                str += '<div class="email"><p>' + addressBook[n].email + '</p></div>';
+                str +='<div class="phone"><p>'+ addressBook[n].phone + '</p></div>';
+                str += '<div class="address"><p>' + addressBook[n].address + '</p></div>';
+                str += '<div class="city"><p>' + addressBook[n].city + '</p></div>';
+                str += '<div class="del"><a href="#" class="delbutton" data-id="' + n +'"> Delete</a></div>';
+                str += '</div>';
+                addBookDiv.innerHTML +=;
         }
     }
 }
