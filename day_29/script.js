@@ -20,7 +20,12 @@ var addressBook =[]
 // event listeners
 quickAddBtn.addEventListener("click",function() {
     quickAddFormDiv.Style.display ="block";
-})
+});
 cancelBtn.addEventListener("click",function(){
     quickAddFormDiv.Style.display ="none";
-})
+});
+AddBtn.addEventListener("click", addToBook);
+function addToBook(){
+    var isNull =fullname.value!='' && phone.value!='' && address.value!='' && city.value!='' && email.value!='' &&;
+    console.log(isNull);
+}
