@@ -66,7 +66,26 @@ function showAddressBook(){
         addressBook = JSON.parse(localStorage['addbook']);
         addBookDiv.innerHTML='';
         for(var n in addressBook){
-            
+            <div class="entry">
+                <div class="name">
+                    <p> Hala</p>
+                </div>
+                <div class="email">
+                    <p>hala@gmail.com</p>
+                </div>
+                <div class="phone">
+                    <p>699076543</p>
+                </div>
+                <div class="address">
+                    <p>Manguier</p>
+                </div>
+                <div class="city">
+                    <p>Yaoundé</p>
+                </div>
+                <div class="del">
+                    <a href="#"> Delete</a>
+                </div>
+            </div>
         }
     }
 }
