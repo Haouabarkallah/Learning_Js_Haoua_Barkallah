@@ -74,7 +74,8 @@ function showAddressBook(){
                 str += '<div class="city"><p>' + addressBook[n].city + '</p></div>';
                 str += '<div class="del"><a href="#" class="delbutton" data-id="' + n +'"> Delete</a></div>';
                 str += '</div>';
-                addBookDiv.innerHTML +=;
+                addBookDiv.innerHTML += str;
         }
     }
 }
+showAddressBook();
