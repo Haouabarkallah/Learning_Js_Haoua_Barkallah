@@ -21,3 +21,6 @@ var addressBook =[]
 quickAddBtn.addEventListener("click",function() {
     quickAddFormDiv.Style.display ="block";
 })
+cancelBtn.addEventListener("click",function(){
+    quickAddFormDiv.Style.display ="none";
+})
