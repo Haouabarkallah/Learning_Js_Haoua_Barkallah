@@ -44,6 +44,7 @@ function addToBook(){
         // Hide the form panel
         quickAddFormDiv.Style.display ="none";
         //clear the form
+        clearForm();
         //updating and displaying all the records in te addressbooks
 
     }
@@ -53,5 +54,19 @@ function clearForm(){
     var frm = document.querySelectorAll(".formFields")
     for(var i in frm){
         frm[i].value ='';
+    }
+}
+function showAddressBook(){
+    //check if the key 'addbook' exists in localstorage or else create it
+    // if it exists , load contents form the localstorage and loop > display it on the page
+    if(localStorage['addbook'] === undefined){
+        localStorage['addbook'] = "[]";
+
+    }else{
+        addressBook = JSON.parse(localStorage['addbook']);
+        addBookDiv.innerHTML='';
+        for(var n in addressBook){
+            
+        }
     }
 }
