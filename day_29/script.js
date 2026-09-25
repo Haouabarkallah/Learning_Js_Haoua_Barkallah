@@ -13,3 +13,6 @@ var email = document.getElementById("email");
 
 //address book display
 var addBookDiv = document.querySelector(".addbook");
+
+//create storage array
+var addressBook =[]
