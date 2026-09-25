@@ -41,7 +41,17 @@ function addToBook(){
         var obj = new jsonStructure(fullname.value,phone.value,address.value,city.value,email.value);
         addressBook.push(obj);
         localStorage['addbook'] = JSON.stringify(addressBook);
-        
+        // Hide the form panel
+        quickAddFormDiv.Style.display ="none";
+        //clear the form
+        //updating and displaying all the records in te addressbooks
+
     }
     // console.log(isNull);
+}
+function clearForm(){
+    var frm = document.querySelectorAll(".formFields")
+    for(var i in frm){
+        frm[i].value ='';
+    }
 }
