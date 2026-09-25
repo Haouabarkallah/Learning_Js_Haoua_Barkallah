@@ -27,6 +27,8 @@ cancelBtn.addEventListener("click",function(){
 });
 AddBtn.addEventListener("click", addToBook);
 
+addBookDiv.addEventListener("click", removeEntry)
+
 function jsonStructure(fullname,phone,address,city,email){
     this.fullname = fullname;
     this.phone =phone;
