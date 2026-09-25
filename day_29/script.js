@@ -59,7 +59,8 @@ function removeEntry(e){
         var remID = e.target.getAttribute("data-id");
         // remove the json entry from the array with the index num =remID;
         addressBook.toSpliced(remID,1);
-        localStorage
+        localStorage['addbook'] = JSON.stringify(addressBook);
+        showAddressBook();
     }
 }
 
