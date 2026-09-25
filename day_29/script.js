@@ -46,7 +46,7 @@ function addToBook(){
         //clear the form
         clearForm();
         //updating and displaying all the records in te addressbooks
-
+        showAddressBook();
     }
     // console.log(isNull);
 }
