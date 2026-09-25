@@ -1,3 +1,4 @@
+
 //btns
 var quickAddBtn =document.getElementById("QuickAdd");
 var AddBtn = document.getElementById("Add");
