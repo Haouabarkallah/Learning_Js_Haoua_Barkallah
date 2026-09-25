@@ -3,3 +3,11 @@ var quickAddBtn =document.getElementById("QuickAdd");
 var AddBtn = document.getElementById("Add");
 var cancelBtn = document.getElementById("Cancel");
 var quickAddFormDiv = document.querySelector(".quickaddForm");
+
+//form fields
+var fullname = document.getElementById("fullname");
+var phone = document.getElementById("phone");
+var address = document.getElementById("address");
+var city = document.getElementById("city");
+var email = document.getElementById("email");
+
