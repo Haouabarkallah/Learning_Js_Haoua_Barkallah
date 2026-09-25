@@ -25,7 +25,14 @@ cancelBtn.addEventListener("click",function(){
     quickAddFormDiv.Style.display ="none";
 });
 AddBtn.addEventListener("click", addToBook);
+
 function addToBook(){
-    var isNull =fullname.value!='' && phone.value!='' && address.value!='' && city.value!='' && email.value!='' &&;
-    console.log(isNull);
+    var isNull =fullname.value!='' && phone.value!='' && address.value!='' && city.value!='' && email.value!='';
+    if(isNull){
+        //add the contents of the form to the array and localstorage
+        var obj = {
+            " fullname":"hala", "phone": "699876543","address":"manguier","city":"yaoundé","email":"hala@gmail.com"
+        };
+    }
+    // console.log(isNull);
 }
