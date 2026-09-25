@@ -16,3 +16,8 @@ var addBookDiv = document.querySelector(".addbook");
 
 //create storage array
 var addressBook =[]
+
+// event listeners
+quickAddBtn.addEventListener("click",function() {
+    quickAddFormDiv.Style.display ="block";
+})
