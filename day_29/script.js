@@ -39,6 +39,9 @@ function addToBook(){
     if(isNull){
         //add the contents of the form to the array and localstorage
         var obj = new jsonStructure(fullname.value,phone.value,address.value,city.value,email.value);
+        addressBook.push(obj);
+        localStorage['addbook'] = JSON.stringify(addressBook);
+        
     }
     // console.log(isNull);
 }
