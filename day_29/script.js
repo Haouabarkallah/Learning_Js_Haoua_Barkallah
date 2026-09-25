@@ -26,6 +26,14 @@ cancelBtn.addEventListener("click",function(){
 });
 AddBtn.addEventListener("click", addToBook);
 
+function jsonStructure(fullname,phone,address,city,email){
+    this.fullname = fullname;
+    this.phone =phone;
+    this.address =address;
+    this.city =city;
+    this.email =email;
+}
+
 function addToBook(){
     var isNull =fullname.value!='' && phone.value!='' && address.value!='' && city.value!='' && email.value!='';
     if(isNull){
