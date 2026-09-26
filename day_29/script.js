@@ -57,7 +57,7 @@ function addToBook(){
 function removeEntry(e){
     if(e.target.classList.contains("delbutton")){
         var remID = e.target.getAttribute("data-id");
-        // remove the json entry from the array with the index num =remID;
+        // remove the json entry from the array with the index num =remID
         addressBook.toSpliced(remID,1);
         localStorage['addbook'] = JSON.stringify(addressBook);
         showAddressBook();
