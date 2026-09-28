@@ -3,3 +3,228 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+:root {
+    font-family: Inter, "Segoe UI", Arial, sans-serif;
+    color: #1e293b;
+    background: #f3f7f5;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    --green: #16845b;
+    --green-dark: #106847;
+    --muted: #64748b;
+    --line: #e2eae5;
+}
+
+body {
+    min-height: 100vh;
+    padding: 56px 24px;
+    background:
+        radial-gradient(circle at 12% 4%, rgba(22, 132, 91, 0.09), transparent 25rem),
+        #f3f7f5;
+}
+
+button,
+input,
+textarea {
+    font: inherit;
+}
+
+.container {
+    width: min(100%, 1040px);
+    margin: 0 auto;
+}
+
+.title {
+    margin-bottom: 28px;
+}
+
+.title h1 {
+    color: #173b2d;
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 750;
+    letter-spacing: -0.055em;
+    text-align: center;
+}
+
+.quickadd {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 16px;
+}
+
+#QuickAdd,
+#Add,
+#Cancel {
+    min-height: 44px;
+    padding: 0 20px;
+    border: 0;
+    border-radius: 10px;
+    font-weight: 650;
+    cursor: pointer;
+    transition: background-color 160ms ease, transform 160ms ease, box-shadow 160ms ease;
+}
+
+#QuickAdd,
+#Add {
+    color: #fff;
+    background: var(--green);
+    box-shadow: 0 5px 12px rgba(22, 132, 91, 0.16);
+}
+
+#QuickAdd:hover,
+#Add:hover {
+    background: var(--green-dark);
+    transform: translateY(-1px);
+}
+
+#Cancel {
+    margin-left: 8px;
+    color: #475569;
+    background: #edf2ef;
+}
+
+#Cancel:hover {
+    background: #e2eae5;
+}
+
+#QuickAdd:focus-visible,
+#Add:focus-visible,
+#Cancel:focus-visible,
+.delbutton:focus-visible {
+    outline: 3px solid rgba(22, 132, 91, 0.3);
+    outline-offset: 3px;
+}
+
+.quickaddForm {
+    display: none;
+    margin-bottom: 24px;
+    padding: clamp(20px, 4vw, 32px);
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    background: #fff;
+    box-shadow: 0 12px 32px rgba(31, 64, 47, 0.08);
+}
+
+.quickaddForm label {
+    display: block;
+    margin: 0 0 7px;
+    color: #334155;
+    font-size: 0.9rem;
+    font-weight: 650;
+}
+
+.formFields {
+    display: block;
+    width: 100%;
+    min-height: 46px;
+    margin-bottom: 18px;
+    padding: 11px 13px;
+    border: 1px solid #d7e2db;
+    border-radius: 9px;
+    outline: none;
+    color: #1e293b;
+    background: #fbfdfc;
+    transition: border-color 160ms ease, box-shadow 160ms ease;
+}
+
+.formFields:focus {
+    border-color: var(--green);
+    box-shadow: 0 0 0 3px rgba(22, 132, 91, 0.12);
+}
+
+textarea.formFields {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.addbook {
+    display: grid;
+    gap: 12px;
+}
+
+.entry {
+    display: grid;
+    grid-template-columns: 1.1fr 1.5fr 1fr 1.4fr 1fr auto;
+    align-items: center;
+    gap: 18px;
+    padding: 20px 22px;
+    border: 1px solid var(--line);
+    border-radius: 15px;
+    background: #fff;
+    box-shadow: 0 5px 18px rgba(31, 64, 47, 0.045);
+    transition: border-color 160ms ease, box-shadow 160ms ease, transform 160ms ease;
+}
+
+.entry:hover {
+    transform: translateY(-2px);
+    border-color: #c9ded1;
+    box-shadow: 0 10px 24px rgba(31, 64, 47, 0.08);
+}
+
+.entry p {
+    overflow-wrap: anywhere;
+    color: var(--muted);
+    font-size: 0.92rem;
+    line-height: 1.5;
+}
+
+.entry .name p {
+    color: #173b2d;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.del {
+    text-align: right;
+}
+
+.delbutton {
+    display: inline-block;
+    padding: 8px 11px;
+    border-radius: 8px;
+    color: #b42332;
+    font-size: 0.88rem;
+    font-weight: 650;
+    text-decoration: none;
+    transition: background-color 160ms ease;
+}
+
+.delbutton:hover {
+    background: #fff0f1;
+}
+
+@media (max-width: 760px) {
+    body {
+        padding: 36px 18px;
+    }
+
+    .entry {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+    }
+
+    .entry .del {
+        text-align: left;
+    }
+}
+
+@media (max-width: 440px) {
+    body {
+        padding: 28px 14px;
+    }
+
+    .entry {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        padding: 18px;
+    }
+
+    .quickadd {
+        justify-content: stretch;
+    }
+
+    #QuickAdd {
+        width: 100%;
+    }
+}

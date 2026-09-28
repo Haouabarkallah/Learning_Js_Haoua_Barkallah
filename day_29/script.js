@@ -20,10 +20,10 @@ var addressBook =[]
 
 // event listeners
 quickAddBtn.addEventListener("click",function() {
-    quickAddFormDiv.Style.display ="block";
+    quickAddFormDiv.style.display ="block";
 });
 cancelBtn.addEventListener("click",function(){
-    quickAddFormDiv.Style.display ="none";
+    quickAddFormDiv.style.display ="none";
 });
 AddBtn.addEventListener("click", addToBook);
 
@@ -45,7 +45,7 @@ function addToBook(){
         addressBook.push(obj);
         localStorage['addbook'] = JSON.stringify(addressBook);
         // Hide the form panel
-        quickAddFormDiv.Style.display ="none";
+        quickAddFormDiv.style.display ="none";
         //clear the form
         clearForm();
         //updating and displaying all the records in te addressbooks
@@ -56,9 +56,10 @@ function addToBook(){
 
 function removeEntry(e){
     if(e.target.classList.contains("delbutton")){
-        var remID = e.target.getAttribute("data-id");
-        // remove the json entry from the array with the index num =remID
-        addressBook.toSpliced(remID,1);
+        e.preventDefault();
+        var remID = Number(e.target.getAttribute("data-id"));
+        // Remove the selected record from the array using its index.
+        addressBook.splice(remID,1);
         localStorage['addbook'] = JSON.stringify(addressBook);
         showAddressBook();
     }

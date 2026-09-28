@@ -24,7 +24,7 @@ const updateShoppingCartHTML = function () {  // 3
 					<img src="${product.image}">
 					<div>
 						<h5>${product.name}</h5>
-						<h6>$${product.price}</h6>
+						<h6>FCFA ${product.price}</h6>
 						<div>
 							<button class="button-minus" data-id=${product.id}>-</button>
 							<span class="countOfProduct">${product.count}</span>
@@ -34,14 +34,14 @@ const updateShoppingCartHTML = function () {  // 3
 				</li>`
 		});
 		parentElement.innerHTML = result.join('');
-		document.querySelector('.checkout').classList.remove('hidden');
-		cartSumPrice.innerHTML = 'FCFA' + countTheSumPrice();
+		document.querySelector('.checkoutButton').classList.remove('hidden');
+		cartSumPrice.textContent = 'FCFA ' + countTheSumPrice();
 
 	}
 	else {
-		document.querySelector('.checkout').classList.add('hidden');
+		document.querySelector('.checkoutButton').classList.add('hidden');
 		parentElement.innerHTML = '<h4 class="empty-cart">Your shopping cart is empty</h4>';
-		cartSumPrice.innerHTML = '';
+		cartSumPrice.textContent = '';
 	}
 }
 
@@ -60,8 +60,8 @@ products.forEach(item => {   // 1
 	item.addEventListener('click', (e) => {
 		if (e.target.classList.contains('addToCart')) {
 			const productID = e.target.dataset.productId;
-			const productName = item.querySelector('.productName').innerHTML;
-			const productPrice = item.querySelector('.priceValue').innerHTML;
+			const productName = item.querySelector('.product-name').textContent.trim();
+			const productPrice = item.querySelector('.price span').textContent.trim();
 			const productImage = item.querySelector('img').src;
 			let product = {
 				name: productName,
