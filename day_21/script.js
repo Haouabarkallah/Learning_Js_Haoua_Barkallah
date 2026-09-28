@@ -26,9 +26,9 @@ const updateShoppingCartHTML = function () {  // 3
 						<h5>${product.name}</h5>
 						<h6>FCFA ${product.price}</h6>
 						<div>
-							<button class="button-minus" data-id=${product.id}>-</button>
+							<button class="button-minus" data-id=${product.id}><i class="fa fa-minus-circle" aria-hidden="true"></i></button>
 							<span class="countOfProduct">${product.count}</span>
-							<button class="button-plus" data-id=${product.id}>+</button>
+							<button class="button-plus" data-id=${product.id}><i class="fa fa-plus-circle" aria-hidden="true"></i></button>
 						</div>
 					</div>
 				</li>`
