@@ -1090,15 +1090,15 @@ ul .nav-links {
     cursor: pointer;
 }
 
-#headerSlide .ms-controls .ms-left::before {
-    content: "‹";
-    font-size: 1.8rem;
+/* #headerSlide .ms-controls .ms-left::before {
+    /* content: "‹"; */
+    /* font-size: 1.8rem;
 }
 
 #headerSlide .ms-controls .ms-right::before {
-    content: "›";
-    font-size: 1.8rem;
-}
+    /* content: "›"; */
+    /* font-size: 1.8rem;
+} */
 
 main {
     margin-bottom: 0;
