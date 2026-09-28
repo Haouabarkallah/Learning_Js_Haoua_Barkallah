@@ -1043,17 +1043,19 @@ ul .nav-links {
 
 #headerSlide .ms-content {
     display: flex;
-    width: min(100% - 40px, 1120px);
+    width: max-content;
     height: 100%;
     align-items: center;
-    justify-content: space-around;
+    justify-content: flex-start;
     gap: clamp(12px, 4vw, 50px);
-    overflow: hidden;
+    margin-left: max(20px, calc((100% - 1120px) / 2));
+    overflow: visible;
+    will-change: transform;
 }
 
 #headerSlide .item {
     display: grid;
-    width: min(18%, 190px);
+    width: min(18vw, 190px);
     height: 72%;
     flex: 0 0 auto;
     place-items: center;
@@ -1088,6 +1090,30 @@ ul .nav-links {
     color: var(--shop-green-dark);
     background: rgba(255, 255, 255, 0.8);
     cursor: pointer;
+}
+
+#headerSlide .ms-controls {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    pointer-events: none;
+}
+
+#headerSlide .ms-controls .ms-left,
+#headerSlide .ms-controls .ms-right {
+    position: absolute;
+    top: 50%;
+    margin: 0;
+    transform: translateY(-50%);
+    pointer-events: auto;
+}
+
+#headerSlide .ms-controls .ms-left {
+    left: max(12px, calc((100% - 1200px) / 2));
+}
+
+#headerSlide .ms-controls .ms-right {
+    right: max(12px, calc((100% - 1200px) / 2));
 }
 
 /* #headerSlide .ms-controls .ms-left::before {
@@ -1480,14 +1506,14 @@ footer .footer-second {
     }
 
     #headerSlide .ms-content {
-        width: calc(100% - 70px);
+        width: max-content;
+        margin-left: 55px;
         justify-content: flex-start;
-        overflow-x: auto;
-        scroll-snap-type: x mandatory;
+        overflow: visible;
     }
 
     #headerSlide .item {
-        width: 34%;
+        width: 34vw;
         height: 75%;
         scroll-snap-align: center;
     }
@@ -1588,6 +1614,6 @@ footer .footer-second {
     }
 
     #headerSlide .item {
-        width: 45%;
+        width: 45vw;
     }
 }
