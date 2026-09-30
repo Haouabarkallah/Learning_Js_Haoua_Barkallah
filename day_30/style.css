@@ -78,3 +78,15 @@ textarea {
     min-height: 100px;
     resize: vertical;
 }
+
+button {
+    padding: 14px;
+    background: #6a11cb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+}
