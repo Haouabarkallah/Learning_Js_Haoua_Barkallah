@@ -1,5 +1,5 @@
 
-document.addEventListener('DOMContentLoaded', function()){
+document.addEventListener('DOMContentLoaded', function(){
     // DOM elements
     const taskForm = document.getElementById('taskForm');
     const taskList = document.getElementById('taskList');
@@ -37,4 +37,4 @@ document.addEventListener('DOMContentLoaded', function()){
 
     });
 
-}
+});
