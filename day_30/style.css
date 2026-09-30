@@ -125,3 +125,8 @@ button:hover{
     text-align: center;
     box-shadow: 0 4px 10px rgba(0,0,0,0.08);
 }
+.stat-card h3{
+    font-size:2rem;
+    margin-bottom: 5px;
+    color: #6a11cb;
+}
