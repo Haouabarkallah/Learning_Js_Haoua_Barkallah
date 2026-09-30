@@ -226,3 +226,9 @@ button:hover{
     padding: 40px;
     color: #666;
 }
+
+.empty-state i {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    color: #ccc;
+}
