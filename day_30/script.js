@@ -140,7 +140,16 @@ document.addEventListener('DOMContentLoaded', function(){
                 completed(taskId);
 
             });
-        })
+        });
+
+        document.querySelectorAll('.delete-btn').forEach(btn => {
+            btn.addEventListener('click',function(){
+                const taskId =parseInt(this.dataset.id);
+                deleteTask(taskId);
+
+            });
+        });
+
 
     }
 });
