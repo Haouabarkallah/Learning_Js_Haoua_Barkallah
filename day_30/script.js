@@ -152,4 +152,14 @@ document.addEventListener('DOMContentLoaded', function(){
 
 
     }
+
+    // complete a task
+    function completeTask(taskId){
+        tasks = tasks.map(task =>{
+            if (task.id === taskId) {
+                return { ...task, completed: true};
+            }
+            return task;
+        });
+    }
 });
