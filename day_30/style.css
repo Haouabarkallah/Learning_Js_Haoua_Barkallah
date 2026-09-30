@@ -130,3 +130,8 @@ button:hover{
     margin-bottom: 5px;
     color: #6a11cb;
 }
+.task-list{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
