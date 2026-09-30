@@ -67,5 +67,14 @@ document.addEventListener('DOMContentLoaded', function(){
         renderTasks();
         updateStats();
     }
-    
+
+    // render tasks based on current filter
+    function renderTasks(){
+        //filter tasks based on current selection
+        let filteredTasks = tasks;
+
+        if (currentFilter === 'pending'){
+            
+        }
+    }
 });
