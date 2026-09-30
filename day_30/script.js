@@ -19,6 +19,19 @@ document.addEventListener('DOMContentLoaded', function()){
         document.getElementById('taskDueDate').value =today;
 
     }
-    
+
+    // add task event listerner
+    taskForm.addEventListener('submit',function(event){
+        event.preventDefault();
+
+        const title =document.getElementById('taskTitle').value;
+        const description = document.getElementById('taskDescription').value;
+        const dueDate =document.getElementById('taskDueDate').value;
+        const priority = document.getElementById('taskPriority').value;
+
+        addTask(title,description,dueDate,priority);
+        
+
+    })
 
 }
