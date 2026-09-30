@@ -179,3 +179,10 @@ button:hover{
     font-size: 0.9rem;
     color: #777;
 }
+
+.action-btn {
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    background: #f1f3f6;
+}
