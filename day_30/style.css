@@ -74,3 +74,7 @@ input:focus, textarea:focus, select:focus{
     outline: none;
     border-color: #6a11cb;
 }
+textarea {
+    min-height: 100px;
+    resize: vertical;
+}
