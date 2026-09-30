@@ -64,6 +64,12 @@ h2{
     gap: 8px;
 }
 
+option{
+    color: black;
+    /* background-color: #6a11cb; */
+}
+
+
 label{
     font-weight: 600;
     color: #444;
