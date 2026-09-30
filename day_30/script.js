@@ -161,5 +161,18 @@ document.addEventListener('DOMContentLoaded', function(){
             }
             return task;
         });
+
+        saveTasks();
+        renderTasks();
+        updateStats();
+    }
+
+    // delete a task
+    function deleteTask(taskId){
+        tasks = tasks.filter(task => task.id !== taskId);
+        saveTasks();
+        renderTasks();
+        updateStats;
+        
     }
 });
