@@ -173,3 +173,9 @@ button:hover{
     color: #666;
     margin-bottom: 10px;
 }
+.task-meta {
+    display: flex;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #777;
+}
