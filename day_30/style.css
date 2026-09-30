@@ -198,3 +198,10 @@ button:hover{
     opacity: 0.7;
     background: #f8f9fa;
 }
+.completed .task-title{
+    text-decoration:line-through ;
+}
+.priority-badge{
+    padding: 4px 10px;
+    
+}
