@@ -161,3 +161,11 @@ button:hover{
 .task-info {
     flex: 1;
 }
+.task-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
