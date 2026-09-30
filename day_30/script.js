@@ -30,8 +30,11 @@ document.addEventListener('DOMContentLoaded', function()){
         const priority = document.getElementById('taskPriority').value;
 
         addTask(title,description,dueDate,priority);
-        
 
-    })
+        // reset form
+        taskForm.reset();
+        document.getElementById('taskDueDate').value =today;
+
+    });
 
 }
