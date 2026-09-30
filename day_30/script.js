@@ -102,8 +102,36 @@ document.addEventListener('DOMContentLoaded', function(){
             taskElement.className = ` task-item ${task.priority} ${task.completed ? 'completed' : ''}`;
             const dueDate = task.dueDate ? new Date(task.dueDate).toLocaleDateString() : ' No due date';
 
-            
-        })
+            taskElement.innerHTML = `
+            <div class="task-info">
+                <div class="task-title">
+                    ${task.title}
+                    <span class="priority-badge">${task.priority}</span>                
+                </div>
+                <div class="task-desc">
+                    ${task.description  || 'No description'}
+                </div>
+                <div class="task-meta">
+                    <span><i class="fas fa-calendar"></i>  ${dueDate}</span>             
+
+                    <span><i class="fas fa-clock"></i> Created: ${new Date (task.createdAt).toLocaleDateString()}</span>             
+                </div>
+            </div>
+            <div class="task-actions">
+               ${!task.completed ? ` 
+                    <button class="action-btn complete-btn" data-id ="${task.id}">
+                        <i class="fas fa-check"></i> complete
+                    </button>
+                `: ''}
+                <button class="action-btn delete-btn" data-id ="${task.id}">
+                    <i class="fas fa-trash"></i> Delete
+                </button>
+
+            </div>      
+            `;
+            taskList.appendChild(taskElement);
+
+        });
 
     }
 });
