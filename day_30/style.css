@@ -58,3 +58,8 @@ h1{
     flex-direction: column;
     gap: 8px;
 }
+
+label{
+    font-weight: 600;
+    color: #444;
+}
