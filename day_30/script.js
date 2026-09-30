@@ -95,7 +95,15 @@ document.addEventListener('DOMContentLoaded', function(){
             taskList.appendChild(emptyState);
             return;
         }
-        
+
+        // render each task
+        filteredTasks.forEach(tasks =>{
+            const taskElement = document.createElement('div');
+            taskElement.className = ` task-item ${task.priority} ${task.completed ? 'completed' : ''}`;
+            const dueDate = task.dueDate ? new Date(task.dueDate).toLocaleDateString() : ' No due date';
+
+            
+        })
 
     }
 });
