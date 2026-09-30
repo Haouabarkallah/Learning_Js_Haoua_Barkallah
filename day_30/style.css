@@ -221,3 +221,8 @@ button:hover{
     color: white
 }
 
+.empty-state {
+    text-align: center;
+    padding: 40px;
+    color: #666;
+}
