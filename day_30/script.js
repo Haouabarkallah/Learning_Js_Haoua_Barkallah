@@ -74,7 +74,13 @@ document.addEventListener('DOMContentLoaded', function(){
         let filteredTasks = tasks;
 
         if (currentFilter === 'pending'){
-            
+            filteredTasks = tasks.filter(task => !task.completed);
+        } else if (currentFilter === 'completed'){
+            filteredTasks = tasks.filter(task => task.completed);
+
+        } else if (currentFilter === 'high'){
+            filteredTasks = tasks.filter(task => task.priority === 'high');
         }
+        
     }
 });
