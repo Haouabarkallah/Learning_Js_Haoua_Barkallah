@@ -100,3 +100,11 @@ button:hover{
     flex-wrap: wrap;
     margin-bottom: 20px;
 }
+.filter-btn{
+    padding: 10px 20px;
+    background: #f1f3f6;
+    color: #555;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
