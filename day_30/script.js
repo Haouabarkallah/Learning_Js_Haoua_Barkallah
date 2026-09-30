@@ -37,4 +37,17 @@ document.addEventListener('DOMContentLoaded', function(){
 
     });
 
+    //filter btn event listeners
+    filtersBtns.forEach(btn => {
+        btn.addEventListener('click', function(){
+            // update active state
+            filtersBtns.forEach(b => b.classList.remove('active'));
+            this.classList.add('active');
+
+            // set current filter and render tasks
+            currentFilter =this.dataset.filter;
+            renderTasks();
+        });
+    });
+    
 });
