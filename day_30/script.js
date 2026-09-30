@@ -191,5 +191,8 @@ document.addEventListener('DOMContentLoaded', function(){
         localStorage.setItem('tasks', JSON.stringify(tasks));
 
     }
+
+    // initialize the app
+    init();
     
 });
