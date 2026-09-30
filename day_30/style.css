@@ -169,3 +169,7 @@ button:hover{
     align-items: center;
     gap: 10px;
 }
+.task-desc{
+    color: #666;
+    margin-bottom: 10px;
+}
