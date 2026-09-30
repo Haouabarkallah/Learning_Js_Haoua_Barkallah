@@ -49,5 +49,18 @@ document.addEventListener('DOMContentLoaded', function(){
             renderTasks();
         });
     });
-    
+
+    // add new task
+    function addTask(title,description,dueDate, priority){
+        const newTask = {
+            id: Date.now(),
+            title,
+            description,
+            dueDate,
+            priority,
+            completed: false,
+            createdAt: new Date().toISOString()
+        };
+        
+    }
 });
