@@ -158,3 +158,6 @@ button:hover{
 .task-item.low {
     border-left-color: #23d160;
 }
+.task-info {
+    flex: 1;
+}
