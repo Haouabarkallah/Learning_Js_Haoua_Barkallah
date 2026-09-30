@@ -203,6 +203,9 @@ button:hover{
 }
 .priority-badge{
     padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
 
 }
 .high .priority-badge{
