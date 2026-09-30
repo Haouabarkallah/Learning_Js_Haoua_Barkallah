@@ -133,5 +133,14 @@ document.addEventListener('DOMContentLoaded', function(){
 
         });
 
+        // add event listeners to action btn
+        document.querySelectorAll('.complete-btn').forEach(btn => {
+            btn.addEventListener('click',function(){
+                const taskId =parseInt(this.dataset.id);
+                completed(taskId);
+
+            });
+        })
+
     }
 });
