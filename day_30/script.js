@@ -61,6 +61,11 @@ document.addEventListener('DOMContentLoaded', function(){
             completed: false,
             createdAt: new Date().toISOString()
         };
-        
+
+        tasks.push(newTask);
+        saveTasks();
+        renderTasks();
+        updateStats();
     }
+    
 });
