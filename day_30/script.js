@@ -81,6 +81,21 @@ document.addEventListener('DOMContentLoaded', function(){
         } else if (currentFilter === 'high'){
             filteredTasks = tasks.filter(task => task.priority === 'high');
         }
+        // clear task list 
+        taskList.innerHTML ='';
+
+        if (filteredTasks.length === 0){
+            const emptyState = document.createElement('div');
+            emptyState.className ='empty-state';
+            emptyState.innerHTML =` 
+            <i class="fas fa-clipboard-list"></i>
+            <h3>No tasks found</h3>
+            <p>Try changing your filters or add a new task</p>
+            `;
+            taskList.appendChild(emptyState);
+            return;
+        }
         
+
     }
 });
