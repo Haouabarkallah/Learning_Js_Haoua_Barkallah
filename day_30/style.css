@@ -216,3 +216,8 @@ button:hover{
     background: #ffdd57;
     color: #725e00;
 }
+.low .priority-badge{
+    background-color: #23d160 ;
+    color: white
+}
+
