@@ -203,5 +203,9 @@ button:hover{
 }
 .priority-badge{
     padding: 4px 10px;
-    
+
+}
+.high .priority-badge{
+    background: #ff3860;
+    color: white;
 }
