@@ -14,6 +14,11 @@ document.addEventListener('DOMContentLoaded', function()){
         renderTasks();
         updateStats();
         
+        // set today's date as default for the date picker
+        const today = new Date().toISOString().split('T')[0];
+        document.getElementById('taskDueDate').value =today;
+
     }
+    
 
 }
