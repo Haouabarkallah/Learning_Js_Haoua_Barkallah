@@ -173,6 +173,20 @@ document.addEventListener('DOMContentLoaded', function(){
         saveTasks();
         renderTasks();
         updateStats;
-        
+
+    }
+
+    // update task statistics
+    function updateStats(){
+        const totalTasks = tasks.length;
+        const completedTasks = tasks.filter(task => task.completed).length;
+        const pendingTasks = totalTasks - completedTasks;
+
+        document.getElementById('totalTasks').textContent = totalTasks;
+        document.getElementById('completedTasks').textContent = completedTasks;
+        document.getElementById('pendingTasks').textContent = pendingTasks;
+
+        //
+
     }
 });
