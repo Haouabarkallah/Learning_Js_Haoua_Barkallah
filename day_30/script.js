@@ -185,8 +185,11 @@ document.addEventListener('DOMContentLoaded', function(){
         document.getElementById('totalTasks').textContent = totalTasks;
         document.getElementById('completedTasks').textContent = completedTasks;
         document.getElementById('pendingTasks').textContent = pendingTasks;
-
-        //
+    }
+    // save tasks to localstorage
+    function saveTasks (){
+        localStorage.setItem('tasks', JSON.stringify(tasks));
 
     }
+    
 });
