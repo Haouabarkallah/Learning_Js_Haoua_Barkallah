@@ -149,3 +149,12 @@ button:hover{
 .task-item:hover{
     transform: translateY(-3px);
 }
+.task-item.high {
+    border-left-color:#ff3860 ;
+}
+.task-item.medium {
+    border-left-color: #ffdd57;
+}
+.task-item.low {
+    border-left-color: #23d160;
+}
