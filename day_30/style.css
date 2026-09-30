@@ -194,3 +194,7 @@ button:hover{
     background: #ff3860;
     color: white;
 }
+.completed {
+    opacity: 0.7;
+    background: #f8f9fa;
+}
