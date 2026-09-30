@@ -94,3 +94,9 @@ button:hover{
     background: #6a11cb;
     transform: translateY(-2px);
 }
+.filters{
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
