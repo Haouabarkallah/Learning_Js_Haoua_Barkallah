@@ -108,3 +108,7 @@ button:hover{
     font-size: 0.9rem;
     font-weight: 500;
 }
+.filter-btn.active{
+    background: #6a11cb;
+    color: white;
+}
