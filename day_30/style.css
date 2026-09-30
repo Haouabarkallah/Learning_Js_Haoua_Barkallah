@@ -190,3 +190,7 @@ button:hover{
     background: #23d160;
     color: white;
 }
+.delete-btn{
+    background: #ff3860;
+    color: white;
+}
