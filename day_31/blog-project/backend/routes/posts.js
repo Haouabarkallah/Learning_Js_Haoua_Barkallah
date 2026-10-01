@@ -15,7 +15,7 @@ const { posts, getNextId } = require("../data/posts");
  * Exemple : /api/posts?search=async&category=javascript
  */
 
-router.get("/",(req,res) =>{
+router.get("/",(req, res) =>{
     let resultat =[...posts]; // copie pour ne jamais muter les données originales
     const { search, category, sort} = req.query;
 
@@ -23,7 +23,14 @@ router.get("/",(req,res) =>{
         const termeRecherche = search.toLowerCase();
         resultat = resultat.filter(
             (post) =>
-                post.title.toLowerCase().includes(termeRecherche) || post.excerpt.toLowerCase().includes(termeRecherche)
+              post.title.toLowerCase().includes(termeRecherche) || post.excerpt.toLowerCase().includes(termeRecherche)
         );
     }
+
+    if (category){
+        resultat = resultat.filter(
+            (post)=> post.category.toLowerCase() === category.toLowerCase()
+        );
+    }
+
 })
