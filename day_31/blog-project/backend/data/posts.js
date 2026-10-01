@@ -60,4 +60,24 @@ let posts = [
     author: "Fatou Diop",
     date: "2026-08-25",
     },
+    {
+    id: 7,
+    title: "Les bases de l'Event Loop en JavaScript",
+    excerpt: "Comprendre pourquoi setTimeout(fn, 0) ne s'exécute pas immédiatement.",
+    content:
+      "JavaScript est mono-thread, mais utilise une boucle d'événements (event loop) pour gérer les opérations asynchrones sans bloquer l'exécution du programme...",
+    category: "javascript",
+    author: "Moussa Kane",
+    date: "2026-09-01",
+    },
+    {
+    id: 8,
+    title: "Sécuriser une API avec des tokens JWT",
+    excerpt: "Introduction à l'authentification sans état (stateless).",
+    content:
+      "JWT (JSON Web Token) permet d'authentifier des utilisateurs sans que le serveur ait besoin de stocker une session. Le token contient lui-même les informations nécessaires...",
+    category: "backend",
+    author: "Karim Traoré",
+    date: "2026-09-05",
+    },
 ]
