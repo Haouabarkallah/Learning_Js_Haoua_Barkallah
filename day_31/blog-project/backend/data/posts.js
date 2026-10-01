@@ -40,5 +40,24 @@ let posts = [
     author: "Awa Ndiaye",
     date: "2026-08-14",
     },
-    
+    {
+    id: 5,
+    title: "Créer une API REST avec Node.js",
+    excerpt: "Les principes REST appliqués concrètement avec Express.",
+    content:
+      "REST (Representational State Transfer) définit un ensemble de conventions pour construire des APIs : utiliser les verbes HTTP (GET, POST, PUT, DELETE), des URLs basées sur des ressources, etc...",
+    category: "backend",
+    author: "Karim Traoré",
+    date: "2026-08-20",
+    },
+    {
+    id: 6,
+    title: "Flexbox vs Grid : lequel choisir ?",
+    excerpt: "Un comparatif pratique entre les deux systèmes de mise en page CSS.",
+    content:
+      "Flexbox excelle pour aligner des éléments sur un seul axe (ligne ou colonne), tandis que Grid est plus adapté aux mises en page complexes en deux dimensions...",
+    category: "css",
+    author: "Fatou Diop",
+    date: "2026-08-25",
+    },
 ]
