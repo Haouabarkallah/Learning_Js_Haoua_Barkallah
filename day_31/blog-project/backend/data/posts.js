@@ -80,4 +80,11 @@ let posts = [
     author: "Karim Traoré",
     date: "2026-09-05",
     },
-]
+];
+
+//on  exporte le tableau + un compteur pour générer les prochains IDs
+
+module.exports = {
+    posts,
+    getNextId: () => (posts.length ? Math.max(...posts.map((p) => p.id)) +1 :1),
+};
