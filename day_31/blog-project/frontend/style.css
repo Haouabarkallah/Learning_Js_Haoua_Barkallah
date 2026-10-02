@@ -90,3 +90,7 @@ p {
     margin-bottom: 12px;
     color: #555;
 }
+.carte-article .meta {
+    font-size: 0.8rem;
+    color: #999;
+}
