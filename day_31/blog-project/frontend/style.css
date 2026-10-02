@@ -80,3 +80,8 @@ p {
     text-transform: uppercase;
 
 }
+.carte-article h2 {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    line-height: 1.3;
+}
