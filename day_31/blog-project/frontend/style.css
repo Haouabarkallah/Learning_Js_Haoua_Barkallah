@@ -51,7 +51,12 @@ p {
     margin-bottom: 16px;
     font-style: italic ;
 }
-.grille-article{
+.grille-article {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+}
+.carte-article{
     background-color: white;
     border-radius: 12px;
     padding: 20px;
