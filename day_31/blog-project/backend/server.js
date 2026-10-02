@@ -14,11 +14,34 @@ app.use(express.json()); // permet de lire req.body en JSON (pour es requetes PO
 
 /// petit middleware "logger" fait main , pour voir chaque requette dans le terminal
 
-app.use((req, res, next)=> {
+app.use((req, res, next) => {
     console.log(`${new Date().toDateString} - ${req.method} {req.url}`);
     next(); // Important : passe la main au middleware/route suivante
 });
  
+// Routes
+
+app.get("/", (req, res) => {
+    res.json({ message: "Bienvenue sur L'API du blog. Essayet GET/api/posts"});
+});
+
+app.use("/api/posts", postsRouter);
+
+//gestion des routes inconnues (404)
+
+app.use((req, res) => {
+    res.status(404).json({ erreur: "Route non trouvée"});
+});
+
+//gestion centralisée des erreurs
+app.use((err, req, res, next) => {
+    console.error(err.stack);
+    res.status(500).json({ erreur: "Erreur interne du serveur"});
+});
+
+app.listen(PORT, () => {
+    console.log(` Serveur API demarré sur http://localhost:${PORT}`);
+});
 
 
     
