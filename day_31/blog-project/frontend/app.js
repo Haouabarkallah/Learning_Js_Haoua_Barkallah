@@ -87,3 +87,27 @@ function afficherArticles(articles) {
     .join("");
         
 }
+
+/**
+ * Récupère un article précis par son id et l'affiche dans la modale.
+ */
+async function afficherDetailArticle(id) {
+    try {
+        const reponse = await fetch(`${API_URL}/${id}`);
+        if (!reponse.ok) 
+            throw new Error("Article introuvable");
+        
+        const article = await reponse.json();
+
+        detailArticle.innerHTML = `
+            <span class="categorie">${article.category}</span>
+            <h2>${article.title}</h2>
+            
+            <div class="meta">Par ${article.author} . ${formaterDate(article.date)}</div>
+            <div class="contenu">${article.content}</div>
+        `;
+        modale.classList.remove('masquee');
+    } catch (erreur) {
+        alert( erreur.message);
+    }
+}
