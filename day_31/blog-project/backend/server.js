@@ -22,7 +22,7 @@ app.use((req, res, next) => {
 // Routes
 
 app.get("/", (req, res) => {
-    res.json({ message: "Bienvenue sur L'API du blog. Essayet GET/api/posts"});
+    res.json({ message: "Bienvenue sur L'API du blog. Essayez GET/api/posts"});
 });
 
 app.use("/api/posts", postsRouter);
