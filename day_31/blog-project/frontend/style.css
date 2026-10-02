@@ -103,3 +103,6 @@ p {
     justify-content: center;
     padding: 20px;
 }
+.modale.masquee {
+    display: none;
+}
