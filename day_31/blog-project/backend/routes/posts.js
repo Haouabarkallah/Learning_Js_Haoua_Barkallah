@@ -70,3 +70,35 @@ router.get("/:id", (req, res) =>{
 
     res.json(post);
 });
+
+/**
+ * POST/api/posts
+ * crée un nouvel article (bonus, utile si je veux etendre le projet plus tard en CRUD complet)
+ */
+
+router.post("/", (req, res)=>{
+    const{ title, excerpt, content, category, author} =req.body;
+
+    if (!title || !content || !category){
+        return res
+        .status(400)
+        .json({erreur: "les champs title, content et category sont obligatoires"});
+
+    }
+
+    const nouvelArticle ={
+        id: getNextId(),
+        title,
+        excerpt: excerpt || content.slice(0, 100) + "...",
+        content,
+        category,
+        author: author || "Anonyme",
+        date: new Date().toDateString().slice(0, 10),
+
+    };
+
+    posts.push(nouvelArticle);
+    res.status(201).json(nouvelArticle);
+});
+
+module.exports = router;
