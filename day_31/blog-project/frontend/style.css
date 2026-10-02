@@ -36,3 +36,9 @@ p {
     margin-bottom: 20px;
     flex-wrap: wrap;
 }
+.barre-outils input, .barre-outils select {
+    padding: 10px 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 0.95rem;
+}
