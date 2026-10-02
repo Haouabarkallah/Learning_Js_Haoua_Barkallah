@@ -44,3 +44,29 @@ function construireUrl() {
     if (selectTri.value) params.set('sort', selectTri.value);
     return `${API_URL}?${params.toString()}`;
 }
+
+/**
+ * Récupère les articles depuis l'API et met à jour l'affichage.
+ * Utilise async/await + try/catch pour une gestion d'erreurs propre.
+ */
+
+async function ChargerArticles() {
+    messageEtat.textContent = 'Chargement des articles...';
+    try {
+        const response = await fetch(construireUrl());
+
+        if (!response.ok) {
+            throw new Error(`Erreur serveur: ${response.status}`);
+        }
+
+        const donnees = await response.json();
+        afficherArticles(donnees.posts);
+
+        messageEtat.textContent = donnees.total === 0 ? 'Aucun article ne correspond à votre recherche.' : `${donnees.total} article(s) trouvé(s).`;
+    } catch (erreur) {
+       
+        messageEtat.textContent = `Impossible de charger les articles : ${erreur.message}`;
+        console.error(erreur);
+    }
+}
+
