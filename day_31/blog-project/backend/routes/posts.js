@@ -32,5 +32,16 @@ router.get("/",(req, res) =>{
             (post)=> post.category.toLowerCase() === category.toLowerCase()
         );
     }
+    if (sort === "ancien") {
+        resultat.sort((a, b) => new Date(a.date) - new Date(b.date));
+    } else {
+        // "recent" par defaut
+        resultat.sort((a,b))
+    }
 
-})
+    res.json({
+        total: resultat.length,
+        posts: resultat,
+    });
+
+});
