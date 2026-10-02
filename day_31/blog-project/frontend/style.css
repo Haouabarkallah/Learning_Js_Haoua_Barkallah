@@ -42,3 +42,7 @@ p {
     border-radius: 8px;
     font-size: 0.95rem;
 }
+#recherche {
+    flex: 1;
+    min-width: 200px;
+}
