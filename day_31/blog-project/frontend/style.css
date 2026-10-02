@@ -115,3 +115,15 @@ p {
     padding: 32px;
     position: relative;
 }
+.bouton-fermer {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background-color: #f1f1f1;
+    border: none;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    font-size: 1rem;
+    cursor: pointer;
+}
