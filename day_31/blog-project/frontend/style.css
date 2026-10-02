@@ -10,3 +10,9 @@ body{
     background-color: #f5f6fa;
     color: #1a1a2e;
 }
+.entete {
+    background-color: linear-gradient(135deg, #4f46e5, #7c3aed);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
