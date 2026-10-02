@@ -12,3 +12,12 @@ const modale = document.querySelector('#modale');
 const detailArticle = document.querySelector('#detail-article');
 const boutonFermerModale = document.querySelector('#fermer-modale');
 
+// utilitaire : debounce pour ne pas spammer l'API à chaque frappe de l'utilisateur
+
+function debounce(fonction, delai) {
+    let timeoutId;
+    return (...args) => {
+        clearTimeout(timeoutId);
+        timeoutId = setTimeout(() => fonction(...args), delai);
+    };
+}
