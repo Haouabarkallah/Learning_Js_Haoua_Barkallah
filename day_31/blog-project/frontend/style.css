@@ -127,3 +127,15 @@ p {
     font-size: 1rem;
     cursor: pointer;
 }
+#detail-article h2 {
+    margin-bottom: 12px;
+}
+#detail-article .meta {
+   color: #888;
+   font-size: 0.85rem;
+   margin-bottom: 16px;
+}
+#detail-article .contenu {
+    line-height: 1.7;
+    color: #333;
+}
