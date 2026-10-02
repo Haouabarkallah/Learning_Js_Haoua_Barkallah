@@ -21,3 +21,12 @@ function debounce(fonction, delai) {
         timeoutId = setTimeout(() => fonction(...args), delai);
     };
 }
+
+// utilitaire : formatage de la date en français
+function formaterDate(dateISO) {
+    return new Date(dateISO).toLocaleDateString('fr-FR', {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
+    });
+} 
