@@ -46,3 +46,8 @@ p {
     flex: 1;
     min-width: 200px;
 }
+#message-etat {
+    color: #666;
+    margin-bottom: 16px;
+    font-style: italic ;
+}
