@@ -30,3 +30,17 @@ function formaterDate(dateISO) {
         day: 'numeric'
     });
 } 
+
+
+/**
+ * Construit l'URL de l'API avec les filtres actuels (search, category, sort)
+ * en utilisant URLSearchParams, qui gère automatiquement l'encodage.
+ */
+
+function construireUrl() {
+    const params = new URLSearchParams();
+    if (inputRecherche.value.trim()) params.set('search', inputRecherche.value.trim());
+    if (selectCategorie.value) params.set('category', selectCategorie.value);
+    if (selectTri.value) params.set('sort', selectTri.value);
+    return `${API_URL}?${params.toString()}`;
+}
