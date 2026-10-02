@@ -56,3 +56,17 @@ router.get("/categories", (req, res) =>{
     res.json(categories);
 });
 
+/***
+ * GET/api/posts/:id
+ * retourne un seule article par son id
+ */
+router.get("/:id", (req, res) =>{
+    const id =Number(req.params.id);
+    const post = posts.find((p) => p.id === id);
+
+    if (!post){
+        return res.status(404).json({ erreur: `Aucun article trouvé avec l'id ${id}`});
+    }
+
+    res.json(post);
+});
