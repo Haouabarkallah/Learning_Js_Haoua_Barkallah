@@ -50,7 +50,7 @@ function construireUrl() {
  * Utilise async/await + try/catch pour une gestion d'erreurs propre.
  */
 
-async function ChargerArticles() {
+async function chargerArticles() {
     messageEtat.textContent = 'Chargement des articles...';
     try {
         const response = await fetch(construireUrl());
@@ -70,3 +70,20 @@ async function ChargerArticles() {
     }
 }
 
+ 
+/**
+ * Génère et insère les cartes d'articles dans le DOM.
+ */
+function afficherArticles(articles) {
+    grilleArticles.innerHTML = articles
+    .map((article) => `
+        <article class="carte-article" data-id="${article.id}">
+            <span class="categorie">${article.category}</span>
+            <h2>${article.title}</h2>
+            <p>${article.excerpt}</p>
+            <div class="meta">Par ${article.author} . ${formaterDate(article.date)}</div>
+        </article>
+    `)
+    .join("");
+        
+}
