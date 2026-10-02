@@ -45,3 +45,14 @@ router.get("/",(req, res) =>{
     });
 
 });
+/**
+ * GET /api/posts/categories
+ * Retourne la liste des catégories uniques (utile pour construire un <select> côté front).
+ * ⚠️ Cette route doit être déclarée AVANT "/:id", sinon Express interprète
+ * "categories" comme une valeur d'id !
+ */
+router.get("/categories", (req, res) =>{
+    const categories =[...new Set(posts.map((p)=> p.category))];
+    res.json(categories);
+});
+
