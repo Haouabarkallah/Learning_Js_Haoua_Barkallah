@@ -17,15 +17,17 @@
     <main class="container">
         <section class="bare-outils">
             <input type="text" name="" id="recherche" placeholder="Rechercher un article..." autocomplete="off">
+            <section id="filtre-categorie">
+                <option value="">Toutes les catégories</option>
+                <!-- rempli dynamiquement en js -->
+            </section>
+            <section id="tri">
+                <option value="recent">Plus récents</option>
+                <option value="ancien">Plus anciens</option>
+            </section>
         </section>
-        <section id="filtre-categorie">
-            <option value="">Toutes les catégories</option>
-            <!-- rempli dynamiquement en js -->
-        </section>
-        <section id="tri">
-            <option value="recent">Plus récents</option>
-            <option value="ancien">Plus anciens</option>
-        </section>
+        
+        
     </main>
     <script src="app.js" defer></script>
 </body>
