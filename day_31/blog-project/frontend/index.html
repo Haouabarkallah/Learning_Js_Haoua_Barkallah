@@ -1,41 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Mon Blog </title>
-
+    <meta name="theme-color" content="#f7f5f0">
+    <meta name="description" content="Des idées, des tutoriels et des repères pour progresser en développement web.">
+    <title>Bloggy — Le web, simplement</title>
 </head>
 <body>
-    
     <header class="entete">
-        <h1>Bloggy</h1>
-        <p>Articles sur le developpement web</p>
+        <div class="barre-navigation">
+            <a class="marque" href="#accueil" aria-label="Bloggy, accueil">
+                <span class="marque-icone" aria-hidden="true">Bloggy</span>
+               <!--<span>bloggy</span>-->
+               
+            </a>
+            <a class="lien-navigation" href="#articles">Explorer les articles <span aria-hidden="true">↘</span></a>
+        </div>
+        <div class="hero" id="accueil">
+            <p class="surtitre"><span></span> Le carnet des curieux du web</p>
+            <h1>Le web, <em>simplement.</em></h1>
+            <p class="intro-hero">Des idées, des tutoriels et des repères pour progresser<br class="saut-ligne"> dans le monde du développement web.</p>
+            <a class="appel-action" href="#articles">Lire les derniers articles <span aria-hidden="true">↓</span></a>
+        </div>
     </header>
 
-    <main class="container">
-        <section class="bare-outils">
-            <input type="text" name="" id="recherche" placeholder="Rechercher un article..." autocomplete="off">
-            <section id="filtre-categorie">
-                <option value="">Toutes les catégories</option>
-                <!-- rempli dynamiquement en js -->
-            </section>
-            <section id="tri">
-                <option value="recent">Plus récents</option>
-                <option value="ancien">Plus anciens</option>
-            </section>
+    <main class="container" id="articles">
+        <div class="entete-section">
+            <div>
+                <p class="surtitre surtitre-sombre">À lire en ce moment</p>
+                <h2>Les dernières idées<span>.</span></h2>
+            </div>
+            <p class="description-section">Des articles accessibles pour mieux comprendre<br class="saut-ligne"> les outils qui font le web.</p>
+        </div>
+        <section class="barre-outils" aria-label="Rechercher et filtrer les articles">
+            <label class="champ-recherche">
+                <span class="icone-recherche" aria-hidden="true"></span>
+                <input type="search" id="recherche" placeholder="Rechercher un article..." autocomplete="off" aria-label="Rechercher un article">
+            </label>
+            <label class="controle-filtre">
+                <span class="visuellement-cache">Filtrer par catégorie</span>
+                <select id="filtre-categorie" aria-label="Filtrer par catégorie">
+                    <option value="">Toutes les catégories</option>
+                </select>
+            </label>
+            <label class="controle-filtre controle-tri">
+                <span class="visuellement-cache">Trier les articles</span>
+                <select id="tri" aria-label="Trier les articles">
+                    <option value="recent">Plus récents</option>
+                    <option value="ancien">Plus anciens</option>
+                </select>
+            </label>
         </section>
-        <!-- message d'etat (chargement , erreur, aucun resultat)
-         -->
-        <p id="message-etat"></p>
-        <!-- grille des articles -->
-         <section id="grille-articles" class="grille-articles"></section>
+        <p id="message-etat" role="status" aria-live="polite"></p>
+        <section id="grille-articles" class="grille-articles" aria-label="Liste des articles"></section>
     </main>
-    <!-- modale pour affichier le details d'un article -->
-    <div id="modale" class="modale masquee">
+    <footer class="pied-page">
+         <a class="marque" href="#accueil"><span class="marque-icone" aria-hidden="true">Bloggy</span><!--<span>bloggy</span>--></a>
+        <p>Fait avec curiosité, pour les curieux du web.</p>
+        <span class="copyright">© 2026 Bloggy</span>
+    </footer>
+    <div id="modale" class="modale masquee" role="dialog" aria-modal="true" aria-label="Détail de l'article">
         <div class="contenu-modale">
-            <button id="fermer-modale" class="bouton-fermer"> ferme</button>
+            <button id="fermer-modale" class="bouton-fermer" aria-label="Fermer l'article">×</button>
             <div id="detail-article"></div>
         </div>
     </div>

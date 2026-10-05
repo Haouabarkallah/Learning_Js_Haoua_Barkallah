@@ -123,7 +123,7 @@ async function chargerCategories() {
         categories.forEach((categorie) => {
             const option = document.createElement('option');
             option.value = categorie;
-            option.textContent = categorie.charAt;(0).toUpperCase() + categorie.slice(1);
+            option.textContent = categorie.charAt(0).toUpperCase() + categorie.slice(1);
 
             selectCategorie.appendChild(option);
         });
