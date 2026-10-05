@@ -150,3 +150,20 @@ grilleArticles.addEventListener("click", (event) => {
         afficherDetailArticle(id);
     }
 });
+
+// fermeture de la modale
+boutonFermerModale.addEventListener("click", () => {
+    modale.classList.add('masquee');
+});
+modale.addEventListener("click", (event) => {
+    if (event.target === modale) {
+        modale.classList.add('masquee'); // clic en dehors du contenu de la modale ferme la modale
+    }
+});
+
+document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+        modale.classList.add('masquee');
+    }
+});
+
