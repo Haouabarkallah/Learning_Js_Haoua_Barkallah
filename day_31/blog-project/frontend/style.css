@@ -121,6 +121,12 @@ select {
     text-decoration: underline;
 }
 
+.hero-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
 
 .hero {
     padding-top: clamp(75px, 10vw, 130px);
