@@ -131,4 +131,22 @@ async function chargerCategories() {
         
         console.error("Impossible de charger les catégories : ",erreur);
     }    
-}       
+}   
+
+// ecouteur d'evenements
+// recherche "en direct" avec debounce (attend 400ms apres la derniere frappe)
+
+inputRecherche.addEventListener("input", debounce(chargerArticles, 400));
+
+// filters : rechargement imediat au changement
+selectCategorie.addEventListener("change", chargerArticles);
+selectTri.addEventListener("change", chargerArticles);
+
+// delegation d'evenement pour les cartes d'articles : un seul listener pour toutes les artess (meme futures)
+grilleArticles.addEventListener("click", (event) => {
+    const carte = event.target.closest(".carte-article");
+    if (carte) {
+        const id = carte.dataset.id;
+        afficherDetailArticle(id);
+    }
+});
