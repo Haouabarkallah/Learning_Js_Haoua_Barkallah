@@ -197,11 +197,17 @@ select {
     color: white;
 }
 
-.appel-action span {
-    color: #c6b7ff;
-    font-size: 1.1rem;
-}
+.image-side{
 
+    display: flex;
+
+    align-items: left;
+    justify-content: center;
+    width: 100%;
+    
+   
+   
+}
 .container {
     width: min(1240px, 100% - 48px);
     margin: 0 auto;
