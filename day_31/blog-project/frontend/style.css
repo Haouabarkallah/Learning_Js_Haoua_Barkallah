@@ -499,22 +499,14 @@ select {
     gap: 20px;
     padding: 24px max(24px, calc((100% - 1240px) / 2));
     border-top: 1px solid var(--ligne);
-    color: var(--encre-doux);
+    background-color: var(--accent);
+    color: white;
 }
 
-.pied-page .marque {
-    color: var(--encre);
-    font-size: 1.05rem;
-}
-
-.pied-page .marque-icone {
-    width: 30px;
-    height: 30px;
-}
 
 .pied-page p,
 .copyright {
-    font-size: 0.78rem;
+    font-size: 0.98rem;
 }
 
 .visuellement-cache {
