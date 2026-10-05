@@ -1,14 +1,12 @@
 
 :root {
     color-scheme: light;
-    --encre: #20231f;
-    --encre-doux: #676b63;
-    --papier: #f7f5f0;
-    --blanc: #fffefa;
-    --violet: #7055c9;
-    --violet-sombre: #5940ad;
-    --ligne: #e8e4db;
-    --ombre: 0 18px 50px rgba(44, 39, 30, 0.08);
+    --Primary:#d8c8f8;
+    --surface: #f8e8f8;
+    --dark: #080808;
+    --accent: #b8a8c8;
+    --highlight: #9898a8;
+
 }
 
 * {
@@ -23,8 +21,8 @@ html {
 
 body {
     min-width: 320px;
-    background: var(--papier);
-    color: var(--encre);
+    background: white;
+    color: var(--dark);
     font-family: Inter, "Avenir Next", Avenir, "Segoe UI", sans-serif;
     -webkit-font-smoothing: antialiased;
 }
@@ -107,7 +105,7 @@ select {
 }
 
 .lien-navigation:hover {
-    color: #fff;
+    color: #7055c9;
 }
 
 .lien-navigation span {
