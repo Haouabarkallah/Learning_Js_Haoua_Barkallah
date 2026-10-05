@@ -75,7 +75,7 @@ select {
     display: inline-flex;
     align-items: center;
     gap: 10px;
-    color: inherit;
+    /* color: inherit; */
     font-size: 1.2rem;
     font-weight: 750;
     letter-spacing: -0.06em;
@@ -84,25 +84,22 @@ select {
 
 .marque-icone {
     display: grid;
-    width: 64px;
-    height: 44px;
     place-items: center;
-    border-radius: 11px;
-    background: white;
-    color: #282333;
-    font-size: 1.05rem;
+    
+    color: var(--dark);
+    font-size: 3.05rem;
     letter-spacing: -0.08em;
 }
 
 .lien-navigation {
-    color: white;
-    font-size: 0.88rem;
+    color: var(--dark);
+    font-size: 1rem;
     text-decoration: none;
     transition: color 160ms ease;
 }
 
 .lien-navigation:hover {
-    color: #7055c9;
+    color: var(--surface);
 }
 
 .lien-navigation span {
