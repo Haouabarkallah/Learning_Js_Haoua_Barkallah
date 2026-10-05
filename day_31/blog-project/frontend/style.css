@@ -89,11 +89,11 @@ select {
 
 .marque-icone {
     display: grid;
-    width: 34px;
-    height: 34px;
+    width: 64px;
+    height: 64px;
     place-items: center;
     border-radius: 11px;
-    background: #a38af0;
+    background: white;
     color: #282333;
     font-size: 1.05rem;
     letter-spacing: -0.08em;
