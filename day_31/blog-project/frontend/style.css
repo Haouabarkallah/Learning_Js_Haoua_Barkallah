@@ -42,7 +42,7 @@ select {
     color: var(--dark);
 }
 
-.entete::after {
+/* .entete::after {
     position: absolute;
     right: -116px;
     bottom: -250px;
@@ -53,7 +53,7 @@ select {
     box-shadow: 0 0 0 48px rgba(255, 255, 255, 0.025), 0 0 0 96px rgba(255, 255, 255, 0.025);
     content: "";
     pointer-events: none;
-}
+} */
 
 .barre-navigation,
 .hero {
@@ -83,7 +83,7 @@ select {
 }
 
 .marque-icone {
-    display: grid;
+    
     place-items: center;
     
     color: var(--dark);
@@ -91,16 +91,34 @@ select {
     letter-spacing: -0.08em;
 }
 
-.lien-navigation {
-    color: var(--dark);
-    font-size: 1rem;
-    text-decoration: none;
-    transition: color 160ms ease;
+.left-bar{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    
 }
+.left-bar a{
+    color: var(--dark);
+    text-decoration: none;
+}
+/* .lien-navigation{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: none;
+    color: var(--dark);
+    font-size: 1.5rem;
+    text-decoration: underline;
+    
+    transition: color 160ms ease;
+} */
 
 .lien-navigation:hover {
     color: #b9a6ff;
-    font-weight: 600;
+
+    text-decoration: underline;
 }
 
 
