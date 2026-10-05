@@ -100,7 +100,7 @@ select {
 }
 
 .lien-navigation {
-    color: rgba(255, 253, 249, 0.78);
+    color: white;
     font-size: 0.88rem;
     text-decoration: none;
     transition: color 160ms ease;
