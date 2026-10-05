@@ -111,3 +111,24 @@ async function afficherDetailArticle(id) {
         alert( erreur.message);
     }
 }
+
+/**
+ * Charge la liste des catégories depuis l'API pour remplir le <select>.
+ */
+async function chargerCategories() {
+    try {
+        const reponse = await fetch(`${API_URL}/categories`);
+        const categories = await reponse.json();
+
+        categories.forEach((categorie) => {
+            const option = document.createElement('option');
+            option.value = categorie;
+            option.textContent = categorie.charAt;(0).toUpperCase() + categorie.slice(1);
+
+            selectCategorie.appendChild(option);
+        });
+    } catch (erreur) {
+        
+        console.error("Impossible de charger les catégories : ",erreur);
+    }    
+}       
