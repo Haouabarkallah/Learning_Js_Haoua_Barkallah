@@ -167,3 +167,6 @@ document.addEventListener("keydown", (event) => {
     }
 });
 
+// initialisation au chargement de la page
+chargerCategories();
+chargerArticles();
