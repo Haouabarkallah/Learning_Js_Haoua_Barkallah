@@ -38,11 +38,8 @@ select {
     overflow: hidden;
     min-height: 520px;
     padding: 0 clamp(22px, 7vw, 112px) 76px;
-    background:
-        radial-gradient(ellipse at 83% 37%, rgba(255, 255, 255, 0.18), transparent 29%),
-        radial-gradient(ellipse at 8% 110%, rgba(173, 147, 242, 0.24), transparent 35%),
-        #282333;
-    color: #fffdf9;
+    background: var(--Primary);
+    color: var(--dark);
 }
 
 .entete::after {
