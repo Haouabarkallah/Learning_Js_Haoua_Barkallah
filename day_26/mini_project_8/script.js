@@ -5,7 +5,7 @@ let nombreDeviner = prompt("Devinez le nombre secret (entre 1 et 10) :") * 1; //
 for (let i = nombreDeviner; i !== nombre; i++) { // Boucle jusqu'à ce que l'utilisateur devine le nombre        ) 
    
    if (nombreDeviner === nombre) {
-        console.log(`Super, vous avez trouvé le nombre secret ! ${nombre}` );// Si l'utilisateur devine la lettre
+        console.log(`Super, vous avez trouvé le nombre secret ! ${nombreDeviner}` );// Si l'utilisateur devine la lettre
    } else if (nombreDeviner < nombre) {
         console.log(`Le nombre secret est plus grand que ${nombreDeviner}.`); // Si la lettre devinée est inférieure à la lettre secrète
    } else {
