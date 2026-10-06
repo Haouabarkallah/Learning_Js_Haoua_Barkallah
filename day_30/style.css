@@ -7,7 +7,7 @@
 }
 
 body{
-    background: linear-gradient(135deg, #6A11cb 0%, #2575fc 100%);
+    background: #d97cf588;
     min-height: 100vh;
     padding: 20px;
     color: #333;
@@ -92,7 +92,7 @@ textarea {
 
 button {
     padding: 14px;
-    background: #6a11cb;
+    background: #cb11ac;
     color: white;
     border: none;
     border-radius: 8px;
@@ -120,7 +120,7 @@ button:hover{
     font-weight: 500;
 }
 .filter-btn.active{
-    background: #6a11cb;
+    background: #cb11ac;
     color: white;
 }
 .stats{
