@@ -2,7 +2,7 @@
 const nombre = 5; // Le nombre secret à deviner
 // // const lettre= 'H'; // La lettre secrète à deviner
 let nombreDeviner = prompt("Devinez le nombre secret (entre 1 et 10) :") * 1; // Demande à l'utilisateur de deviner le nombre
-for (let i = nombreDeviner; i !== nombre; i--) { // Boucle jusqu'à ce que l'utilisateur devine le nombre        ) 
+for (let i = nombreDeviner; i !== nombre; i++) { // Boucle jusqu'à ce que l'utilisateur devine le nombre        ) 
    
    if (nombreDeviner === nombre) {
         console.log(`Super, vous avez trouvé le nombre secret ! ${nombre}` );// Si l'utilisateur devine la lettre
