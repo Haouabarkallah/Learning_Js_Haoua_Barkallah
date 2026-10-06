@@ -1,15 +1,15 @@
-// Mini-projet 8 : « Devine la lettre »
-const lettre = 5; // La lettre secrète à deviner
+// Mini-projet 8 : « Devine le nombre »
+const nombre = 5; // Le nombre secret à deviner
 // // const lettre= 'H'; // La lettre secrète à deviner
-let lettreDeviner = prompt("Devinez la lettre secrète (entre 1 et 10) :") * 1; // Demande à l'utilisateur de deviner la lettre
-for (let i=lettreDeviner; i !== lettre; i--) { // Boucle jusqu'à ce que l'utilisateur devine la lettre) 
+let nombreDeviner = prompt("Devinez le nombre secret (entre 1 et 10) :") * 1; // Demande à l'utilisateur de deviner le nombre
+for (let i = nombreDeviner; i !== nombre; i--) { // Boucle jusqu'à ce que l'utilisateur devine le nombre        ) 
    
-   if (lettreDeviner === lettre) {
-        console.log(`Super, vous avez trouvé la lettre secrète ! ${lettre}` );// Si l'utilisateur devine la lettre
-   } else if (lettreDeviner < lettre) {
-        console.log(`La lettre secrète est plus grande que ${lettreDeviner}.`); // Si la lettre devinée est inférieure à la lettre secrète
+   if (nombreDeviner === nombre) {
+        console.log(`Super, vous avez trouvé le nombre secret ! ${nombre}` );// Si l'utilisateur devine la lettre
+   } else if (nombreDeviner < nombre) {
+        console.log(`Le nombre secret est plus grand que ${nombreDeviner}.`); // Si la lettre devinée est inférieure à la lettre secrète
    } else {
-        console.log(`La lettre secrète est plus petite que ${lettreDeviner}.`); // Si la lettre devinée est supérieure à la lettre secrète
+        console.log(`Le nombre secret est plus petit que ${nombreDeviner}.`); // Si la lettre devinée est supérieure à la lettre secrète
         
     }
     
