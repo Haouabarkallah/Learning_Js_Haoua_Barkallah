@@ -66,9 +66,9 @@ textarea {
 
 #QuickAdd,
 #Add {
-    color: #fff;
-    background: var(--green);
-    box-shadow: 0 5px 12px rgba(22, 132, 91, 0.16);
+    color: black;
+    background: var(--line);
+    box-shadow: 0 5px 12px rgba(252, 253, 252, 0.16);
 }
 
 #QuickAdd:hover,
