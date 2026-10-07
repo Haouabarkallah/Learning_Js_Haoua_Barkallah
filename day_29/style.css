@@ -73,7 +73,8 @@ textarea {
 
 #QuickAdd:hover,
 #Add:hover {
-    background: var(--green-dark);
+    color: white;
+    background: rgb(127, 125, 125);
     transform: translateY(-1px);
 }
 
