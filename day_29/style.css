@@ -126,14 +126,14 @@ textarea {
     border: 1px solid #d7e2db;
     border-radius: 9px;
     outline: none;
-    color: #1e293b;
-    background: #fbfdfc;
+    color: black;
+    background: rgb(251, 249, 249);
     transition: border-color 160ms ease, box-shadow 160ms ease;
 }
 
 .formFields:focus {
-    border-color: var(--green);
-    box-shadow: 0 0 0 3px rgba(22, 132, 91, 0.12);
+    border-color: white;
+    box-shadow: 0 0 0 3px gray;
 }
 
 textarea.formFields {
