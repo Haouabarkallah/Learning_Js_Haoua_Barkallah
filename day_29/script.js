@@ -87,7 +87,7 @@ function showAddressBook(){
                 str +='<div class="phone"><p>'+ addressBook[n].phone + '</p></div>';
                 str += '<div class="address"><p>' + addressBook[n].address + '</p></div>';
                 str += '<div class="city"><p>' + addressBook[n].city + '</p></div>';
-                str += '<div class="del"><a href="#" class="delbutton" data-id="' + n +'"> Delete</a></div>';
+                str += '<div class="del"><a href="#" class="delbutton" data-id="' + n +'"><i class="fa-solid fa-trash-arrow-up"></i></a></div>';
                 str += '</div>';
                 addBookDiv.innerHTML += str;
         }
