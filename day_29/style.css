@@ -63,9 +63,12 @@ textarea {
     cursor: pointer;
     transition: background-color 160ms ease, transform 160ms ease, box-shadow 160ms ease;
 }
-
-#QuickAdd,
-#Add {
+#Add{
+    color: white;
+    background: var(--green);
+    box-shadow: 0 5px 12px rgba(252, 253, 252, 0.16);
+}
+#QuickAdd {
     color: black;
     background: var(--line);
     box-shadow: 0 5px 12px rgba(252, 253, 252, 0.16);
