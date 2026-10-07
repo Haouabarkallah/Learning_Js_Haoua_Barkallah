@@ -84,11 +84,11 @@ textarea {
 #Cancel {
     margin-left: 8px;
     color: #475569;
-    background: #edf2ef;
+    background:  rgb(194, 194, 194);
 }
 
 #Cancel:hover {
-    background: #e2eae5;
+    background:rgb(250, 240, 240) ;
 }
 
 #QuickAdd:focus-visible,
@@ -105,8 +105,8 @@ textarea {
     padding: clamp(20px, 4vw, 32px);
     border: 1px solid var(--line);
     border-radius: 18px;
-    background: #fff;
-    box-shadow: 0 12px 32px rgba(31, 64, 47, 0.08);
+    background: white;
+    box-shadow: 0 12px 32px rgba(234, 237, 236, 0.08);
 }
 
 .quickaddForm label {
