@@ -19,9 +19,8 @@
 body {
     min-height: 100vh;
     padding: 56px 24px;
-    background:
-        radial-gradient(circle at 12% 4%, rgba(22, 132, 91, 0.09), transparent 25rem),
-        #f3f7f5;
+    background: rgb(10, 10, 10);
+
 }
 
 button,
