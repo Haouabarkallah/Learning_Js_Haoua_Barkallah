@@ -6,14 +6,14 @@
 
 :root {
     font-family: Inter, "Segoe UI", Arial, sans-serif;
-    color: #1e293b;
-    background: #f3f7f5;
+    color:  #f3f7f5;
+    background: #1e293b;
     font-synthesis: none;
     text-rendering: optimizeLegibility;
-    --green: #16845b;
-    --green-dark: #106847;
+    --green: black;
+    --green-dark: #020a07;
     --muted: #64748b;
-    --line: #e2eae5;
+    --line: rgb(237, 233, 233);
 }
 
 body {
