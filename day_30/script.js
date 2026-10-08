@@ -120,7 +120,7 @@ document.addEventListener('DOMContentLoaded', function(){
             <div class="task-actions">
                ${!task.completed ? ` 
                     <button class="action-btn complete-btn" data-id ="${task.id}">
-                        <i class="fas fa-check"></i> complete
+                        <i class="fas fa-check"></i> 
                     </button>
                 `: ''}
                 <button class="action-btn delete-btn" data-id ="${task.id}">
