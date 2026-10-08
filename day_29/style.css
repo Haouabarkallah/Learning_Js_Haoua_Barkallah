@@ -12,7 +12,7 @@
     text-rendering: optimizeLegibility;
     --green: black;
     --green-dark: #020a07;
-    --muted: #64748b;
+    --muted: #ffffff;
     --line: rgb(237, 233, 233);
 }
 
@@ -155,7 +155,7 @@ textarea.formFields {
     border: 1px solid var(--line);
     border-radius: 15px;
     background: #fff;
-    box-shadow: 0 5px 18px rgba(123, 251, 185, 0.045);
+    box-shadow: 0 5px 18px rgba(27, 54, 40, 0.045);
     transition: border-color 160ms ease, box-shadow 160ms ease, transform 160ms ease;
 }
 
