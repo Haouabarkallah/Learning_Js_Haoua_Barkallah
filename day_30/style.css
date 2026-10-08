@@ -83,7 +83,7 @@ input, textarea,select{
 }
 input:focus, textarea:focus, select:focus{
     outline: none;
-    border-color: #6a11cb;
+    border-color: #cb11ac;
 }
 textarea {
     min-height: 100px;
