@@ -155,7 +155,7 @@ button:hover{
     justify-content: space-between;
     align-items: center;
     box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-    border-left: 5px solid #6a11cb;
+    border-left: 5px solid #d97cf588;
     transition: transform 0.3s;
 }
 .task-item:hover{
