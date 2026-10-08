@@ -124,8 +124,7 @@ document.addEventListener('DOMContentLoaded', function(){
                     </button>
                 `: ''}
                 <button class="action-btn delete-btn" data-id ="${task.id}">
-                    <i class="fas fa-trash"></i> Delete
-                </button>
+                    <i class="fas fa-trash"></i> 
 
             </div>      
             `;
