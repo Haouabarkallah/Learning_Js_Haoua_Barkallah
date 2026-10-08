@@ -1,13 +1,14 @@
 
 document.addEventListener('DOMContentLoaded', function(){
     // DOM elements
-    const taskForm = document.getElementById('taskForm');
+    const taskForm = document.getElementById('taskform');
     const taskList = document.getElementById('taskList');
     const filtersBtns = document.querySelectorAll('.filter-btn');
 
     // task data
     let tasks =JSON.parse(localStorage.getItem('tasks')) || [];
     let currentFilter ='all';
+    const today = new Date().toISOString().split('T')[0];
 
     // initialize the app
     function init() {
@@ -15,7 +16,6 @@ document.addEventListener('DOMContentLoaded', function(){
         updateStats();
         
         // set today's date as default for the date picker
-        const today = new Date().toISOString().split('T')[0];
         document.getElementById('taskDueDate').value =today;
 
     }
@@ -97,7 +97,7 @@ document.addEventListener('DOMContentLoaded', function(){
         }
 
         // render each task
-        filteredTasks.forEach(tasks =>{
+        filteredTasks.forEach(task =>{
             const taskElement = document.createElement('div');
             taskElement.className = ` task-item ${task.priority} ${task.completed ? 'completed' : ''}`;
             const dueDate = task.dueDate ? new Date(task.dueDate).toLocaleDateString() : ' No due date';
@@ -137,7 +137,7 @@ document.addEventListener('DOMContentLoaded', function(){
         document.querySelectorAll('.complete-btn').forEach(btn => {
             btn.addEventListener('click',function(){
                 const taskId =parseInt(this.dataset.id);
-                completed(taskId);
+                completeTask(taskId);
 
             });
         });
@@ -172,7 +172,7 @@ document.addEventListener('DOMContentLoaded', function(){
         tasks = tasks.filter(task => task.id !== taskId);
         saveTasks();
         renderTasks();
-        updateStats;
+        updateStats();
 
     }
 
