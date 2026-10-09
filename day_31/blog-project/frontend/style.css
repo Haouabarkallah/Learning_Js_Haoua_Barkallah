@@ -414,7 +414,7 @@ select {
     align-items: flex-start;
     overflow: hidden;
     padding: 27px 27px 23px;
-    border: 1px solid var(--ligne);
+    border: 1px solid var(--accent);
     border-radius: 12px;
     background: white;
     cursor: pointer;
