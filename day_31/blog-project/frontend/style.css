@@ -456,7 +456,7 @@ select {
     padding: 4px 10px;
     border-radius: 5px;
     background: #ccbbfa;
-    color: var(--violet-sombre);
+    color: var(--dark);
     font-size: 0.67rem;
     font-weight: 750;
     letter-spacing: 0.075em;
