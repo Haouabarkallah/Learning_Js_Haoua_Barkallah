@@ -527,7 +527,7 @@ select {
     place-items: center;
     border: 1px solid var(--ligne);
     border-radius: 50%;
-    background: var(--papier);
+    background: var(--surface);
     color: var(--encre);
     cursor: pointer;
     font-size: 1.45rem;
