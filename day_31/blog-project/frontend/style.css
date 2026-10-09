@@ -117,7 +117,6 @@ select {
 
 .lien-navigation:hover {
     color: white;
-
     text-decoration: underline;
     text-decoration-color: white;
     text-decoration-thickness: 0.55rem;
@@ -512,7 +511,7 @@ select {
     padding: clamp(30px, 6vw, 58px);
     border: 1px solid rgba(255, 255, 255, 0.6);
     border-radius: 16px;
-    background: var(--blanc);
+    background: white;
     box-shadow: 0 30px 100px rgba(14, 12, 18, 0.3);
 }
 
