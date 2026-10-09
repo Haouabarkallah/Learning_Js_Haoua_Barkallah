@@ -116,7 +116,7 @@ select {
 } */
 
 .lien-navigation:hover {
-    color: var(--accent);
+    color: white;
 
     text-decoration: underline;
 }
