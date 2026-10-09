@@ -198,7 +198,7 @@ textarea.formFields {
 
 .delbutton:hover {
     background: #fff0f1;
-    
+    color: #b42332;
 }
 
 @media (max-width: 760px) {
