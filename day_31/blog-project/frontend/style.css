@@ -168,8 +168,7 @@ select {
 }
 
 .hero h1 em {
-    /* color: #b9a6ff; */
-    color: var(--accent);
+    color: white;
     font-weight: 500;
 }
 
