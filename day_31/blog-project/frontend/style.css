@@ -537,7 +537,7 @@ select {
 
 .bouton-fermer:hover {
     transform: rotate(90deg);
-    background: #eee9fa;
+    color: #b42332;
 }
 
 #detail-article h2 {
