@@ -1,9 +1,9 @@
 import React from 'react';
 
-export const TodoWrapper = ({ children }) => {
+export const TodoWrapper = () => {
   return (
     <div className="todo-wrapper">
-      {children}
+      <h1>My Todo List</h1>
     </div>
   );
 };
