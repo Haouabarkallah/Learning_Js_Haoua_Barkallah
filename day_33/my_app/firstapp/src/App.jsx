@@ -12,7 +12,7 @@ function App() {
       <TodoWrapper />
      
     </div>
-  )
+  );
 }
 
 export default App
