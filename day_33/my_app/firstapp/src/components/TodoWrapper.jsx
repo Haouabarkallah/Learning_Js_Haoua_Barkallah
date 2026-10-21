@@ -7,6 +7,7 @@ export const TodoWrapper = () => {
   const addTodo = (todo) => {
     settodos([...todos, {id: uuidv4(), task: todo, 
     completed: false, isEditing: false}]);
+    console.log(todos)
   };
   return (
     <div className="todo-wrapper">
