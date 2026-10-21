@@ -1,3 +1,23 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Poppins', sans-serif;
+  background-color: #f5f5f5;
+  color: black;
+}
+.App{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #dd1010;
+}
+
+
 .counter {
   font-size: 16px;
   padding: 5px 10px;
@@ -173,21 +193,4 @@
     border: 5px solid transparent;
   }
 }
-/*  
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-body{
-  font-family: 'Poppins', sans-serif;
-  background-color: #f5f5f5;
-  color: black;
-}
-.App{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: #dd1010;
-}*/
+  
