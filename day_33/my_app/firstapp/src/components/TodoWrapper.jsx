@@ -13,7 +13,7 @@ export const TodoWrapper = () => {
     completed: false, isEditing: false}]);
     console.log(todos)
   };
-
+  
   return (
     <div className="todo-wrapper">
       <h1>Get Things Done!</h1>
