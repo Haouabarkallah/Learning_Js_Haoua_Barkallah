@@ -13,9 +13,9 @@ export const TodoWrapper = () => {
   return (
     <div className="todo-wrapper">
       <TodoForm addTodo ={addTodo}/>
-      {todos.map {(todo, index) => (
+      {todos.map ((todo, index) => (
         <Todo task = {todo} key = {index} />
-      )}};
+      ))};
      
     </div>
   );
